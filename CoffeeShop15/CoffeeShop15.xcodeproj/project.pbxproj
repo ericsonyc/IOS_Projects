@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352118FB1C1D68E700DF1469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352118FA1C1D68E700DF1469 /* main.m */; };
+		352118FE1C1D68E700DF1469 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 352118FD1C1D68E700DF1469 /* AppDelegate.m */; };
+		352119011C1D68E700DF1469 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352119001C1D68E700DF1469 /* ViewController.m */; };
+		352119041C1D68E700DF1469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352119021C1D68E700DF1469 /* Main.storyboard */; };
+		352119061C1D68E700DF1469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352119051C1D68E700DF1469 /* Assets.xcassets */; };
+		352119141C1D68E700DF1469 /* CoffeeShop15UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 352119131C1D68E700DF1469 /* CoffeeShop15UITests.m */; };
+		352119241C1D83CE00DF1469 /* x4ql_MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352119231C1D83CE00DF1469 /* x4ql_MyTableViewController.m */; };
+		352119271C1D86C300DF1469 /* x4ql_TableViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 352119261C1D86C300DF1469 /* x4ql_TableViewController2.m */; };
+		352119291C1D947C00DF1469 /* TableStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352119281C1D947C00DF1469 /* TableStory.storyboard */; };
+		35B25C9C1C1E648B006EC079 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B25C9B1C1E648B006EC079 /* MapKit.framework */; };
+		35B25C9E1C1E6563006EC079 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B25C9D1C1E6563006EC079 /* CoreLocation.framework */; };
+		35B25CA01C1E6573006EC079 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B25C9F1C1E6573006EC079 /* UIKit.framework */; };
+		35B25CA21C1E6583006EC079 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B25CA11C1E6583006EC079 /* CoreGraphics.framework */; };
+		35B25CA41C1E658D006EC079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B25CA31C1E658D006EC079 /* Foundation.framework */; };
+		35B25CC01C1E824D006EC079 /* WAI_LocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CB81C1E824D006EC079 /* WAI_LocationAnnotation.m */; };
+		35B25CC11C1E824D006EC079 /* WAI_LocationDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CBA1C1E824D006EC079 /* WAI_LocationDetailVC.m */; };
+		35B25CC21C1E824D006EC079 /* WAI_LocationsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CBC1C1E824D006EC079 /* WAI_LocationsTableVC.m */; };
+		35B25CC31C1E824D006EC079 /* WAI_MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CBE1C1E824D006EC079 /* WAI_MapVC.m */; };
+		35B25CC41C1E824D006EC079 /* WhereAmI12 in Resources */ = {isa = PBXBuildFile; fileRef = 35B25CBF1C1E824D006EC079 /* WhereAmI12 */; };
+		35B25CCA1C1EDBCF006EC079 /* x4ql_Coffees.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CC91C1EDBCF006EC079 /* x4ql_Coffees.m */; };
+		35B25CCD1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CCC1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m */; };
+		35C22C631C1DBD1000DAD5A9 /* CityCycleRideLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35C22C621C1DBD1000DAD5A9 /* CityCycleRideLocations.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		352119101C1D68E700DF1469 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 352118EE1C1D68E700DF1469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 352118F51C1D68E700DF1469;
+			remoteInfo = CoffeeShop15;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		352118F61C1D68E700DF1469 /* CoffeeShop15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop15.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		352118FA1C1D68E700DF1469 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		352118FC1C1D68E700DF1469 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		352118FD1C1D68E700DF1469 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		352118FF1C1D68E700DF1469 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		352119001C1D68E700DF1469 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		352119031C1D68E700DF1469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		352119051C1D68E700DF1469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3521190A1C1D68E700DF1469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3521190F1C1D68E700DF1469 /* CoffeeShop15UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeShop15UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		352119131C1D68E700DF1469 /* CoffeeShop15UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeShop15UITests.m; sourceTree = "<group>"; };
+		352119151C1D68E700DF1469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		352119221C1D831000DF1469 /* x4ql_MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x4ql_MyTableViewController.h; sourceTree = "<group>"; };
+		352119231C1D83CE00DF1469 /* x4ql_MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = x4ql_MyTableViewController.m; sourceTree = "<group>"; };
+		352119251C1D860C00DF1469 /* x4ql_TableViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x4ql_TableViewController2.h; sourceTree = "<group>"; };
+		352119261C1D86C300DF1469 /* x4ql_TableViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = x4ql_TableViewController2.m; sourceTree = "<group>"; };
+		352119281C1D947C00DF1469 /* TableStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableStory.storyboard; sourceTree = "<group>"; };
+		35B25C9B1C1E648B006EC079 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		35B25C9D1C1E6563006EC079 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		35B25C9F1C1E6573006EC079 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35B25CA11C1E6583006EC079 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35B25CA31C1E658D006EC079 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35B25CB71C1E824D006EC079 /* WAI_LocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAI_LocationAnnotation.h; sourceTree = "<group>"; };
+		35B25CB81C1E824D006EC079 /* WAI_LocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAI_LocationAnnotation.m; sourceTree = "<group>"; };
+		35B25CB91C1E824D006EC079 /* WAI_LocationDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAI_LocationDetailVC.h; sourceTree = "<group>"; };
+		35B25CBA1C1E824D006EC079 /* WAI_LocationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAI_LocationDetailVC.m; sourceTree = "<group>"; };
+		35B25CBB1C1E824D006EC079 /* WAI_LocationsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAI_LocationsTableVC.h; sourceTree = "<group>"; };
+		35B25CBC1C1E824D006EC079 /* WAI_LocationsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAI_LocationsTableVC.m; sourceTree = "<group>"; };
+		35B25CBD1C1E824D006EC079 /* WAI_MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAI_MapVC.h; sourceTree = "<group>"; };
+		35B25CBE1C1E824D006EC079 /* WAI_MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAI_MapVC.m; sourceTree = "<group>"; };
+		35B25CBF1C1E824D006EC079 /* WhereAmI12 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WhereAmI12; sourceTree = "<group>"; };
+		35B25CC51C1EB506006EC079 /* x4ql_CommunicateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x4ql_CommunicateDelegate.h; sourceTree = "<group>"; };
+		35B25CC81C1EDA6D006EC079 /* x4ql_Coffees.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x4ql_Coffees.h; sourceTree = "<group>"; };
+		35B25CC91C1EDBCF006EC079 /* x4ql_Coffees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = x4ql_Coffees.m; sourceTree = "<group>"; };
+		35B25CCB1C1EF019006EC079 /* x4ql_CoffeeAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x4ql_CoffeeAnnotation.h; sourceTree = "<group>"; };
+		35B25CCC1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = x4ql_CoffeeAnnotation.m; sourceTree = "<group>"; };
+		35B25CCE1C1EFD14006EC079 /* x4ql_CoffeeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = x4ql_CoffeeDelegate.h; sourceTree = "<group>"; };
+		35C22C621C1DBD1000DAD5A9 /* CityCycleRideLocations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = CityCycleRideLocations.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		352118F31C1D68E700DF1469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B25C9E1C1E6563006EC079 /* CoreLocation.framework in Frameworks */,
+				35B25CA41C1E658D006EC079 /* Foundation.framework in Frameworks */,
+				35B25CA21C1E6583006EC079 /* CoreGraphics.framework in Frameworks */,
+				35B25CA01C1E6573006EC079 /* UIKit.framework in Frameworks */,
+				35B25C9C1C1E648B006EC079 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3521190C1C1D68E700DF1469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		352118ED1C1D68E700DF1469 = {
+			isa = PBXGroup;
+			children = (
+				35B25CA31C1E658D006EC079 /* Foundation.framework */,
+				35B25CA11C1E6583006EC079 /* CoreGraphics.framework */,
+				35B25C9F1C1E6573006EC079 /* UIKit.framework */,
+				35B25C9D1C1E6563006EC079 /* CoreLocation.framework */,
+				35B25C9B1C1E648B006EC079 /* MapKit.framework */,
+				352118F81C1D68E700DF1469 /* CoffeeShop15 */,
+				352119121C1D68E700DF1469 /* CoffeeShop15UITests */,
+				352118F71C1D68E700DF1469 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		352118F71C1D68E700DF1469 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				352118F61C1D68E700DF1469 /* CoffeeShop15.app */,
+				3521190F1C1D68E700DF1469 /* CoffeeShop15UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		352118F81C1D68E700DF1469 /* CoffeeShop15 */ = {
+			isa = PBXGroup;
+			children = (
+				35B25CB71C1E824D006EC079 /* WAI_LocationAnnotation.h */,
+				35B25CB81C1E824D006EC079 /* WAI_LocationAnnotation.m */,
+				35B25CB91C1E824D006EC079 /* WAI_LocationDetailVC.h */,
+				35B25CBA1C1E824D006EC079 /* WAI_LocationDetailVC.m */,
+				35B25CBB1C1E824D006EC079 /* WAI_LocationsTableVC.h */,
+				35B25CBC1C1E824D006EC079 /* WAI_LocationsTableVC.m */,
+				35B25CBD1C1E824D006EC079 /* WAI_MapVC.h */,
+				35B25CBE1C1E824D006EC079 /* WAI_MapVC.m */,
+				35B25CBF1C1E824D006EC079 /* WhereAmI12 */,
+				35C22C621C1DBD1000DAD5A9 /* CityCycleRideLocations.plist */,
+				352119221C1D831000DF1469 /* x4ql_MyTableViewController.h */,
+				352119231C1D83CE00DF1469 /* x4ql_MyTableViewController.m */,
+				352119251C1D860C00DF1469 /* x4ql_TableViewController2.h */,
+				352119261C1D86C300DF1469 /* x4ql_TableViewController2.m */,
+				352118FC1C1D68E700DF1469 /* AppDelegate.h */,
+				352118FD1C1D68E700DF1469 /* AppDelegate.m */,
+				352118FF1C1D68E700DF1469 /* ViewController.h */,
+				352119001C1D68E700DF1469 /* ViewController.m */,
+				352119021C1D68E700DF1469 /* Main.storyboard */,
+				352119051C1D68E700DF1469 /* Assets.xcassets */,
+				3521190A1C1D68E700DF1469 /* Info.plist */,
+				352119281C1D947C00DF1469 /* TableStory.storyboard */,
+				352118F91C1D68E700DF1469 /* Supporting Files */,
+				35B25CC51C1EB506006EC079 /* x4ql_CommunicateDelegate.h */,
+				35B25CC81C1EDA6D006EC079 /* x4ql_Coffees.h */,
+				35B25CC91C1EDBCF006EC079 /* x4ql_Coffees.m */,
+				35B25CCB1C1EF019006EC079 /* x4ql_CoffeeAnnotation.h */,
+				35B25CCC1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m */,
+				35B25CCE1C1EFD14006EC079 /* x4ql_CoffeeDelegate.h */,
+			);
+			path = CoffeeShop15;
+			sourceTree = "<group>";
+		};
+		352118F91C1D68E700DF1469 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				352118FA1C1D68E700DF1469 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		352119121C1D68E700DF1469 /* CoffeeShop15UITests */ = {
+			isa = PBXGroup;
+			children = (
+				352119131C1D68E700DF1469 /* CoffeeShop15UITests.m */,
+				352119151C1D68E700DF1469 /* Info.plist */,
+			);
+			path = CoffeeShop15UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		352118F51C1D68E700DF1469 /* CoffeeShop15 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 352119181C1D68E700DF1469 /* Build configuration list for PBXNativeTarget "CoffeeShop15" */;
+			buildPhases = (
+				352118F21C1D68E700DF1469 /* Sources */,
+				352118F31C1D68E700DF1469 /* Frameworks */,
+				352118F41C1D68E700DF1469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeShop15;
+			productName = CoffeeShop15;
+			productReference = 352118F61C1D68E700DF1469 /* CoffeeShop15.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3521190E1C1D68E700DF1469 /* CoffeeShop15UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3521191B1C1D68E700DF1469 /* Build configuration list for PBXNativeTarget "CoffeeShop15UITests" */;
+			buildPhases = (
+				3521190B1C1D68E700DF1469 /* Sources */,
+				3521190C1C1D68E700DF1469 /* Frameworks */,
+				3521190D1C1D68E700DF1469 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				352119111C1D68E700DF1469 /* PBXTargetDependency */,
+			);
+			name = CoffeeShop15UITests;
+			productName = CoffeeShop15UITests;
+			productReference = 3521190F1C1D68E700DF1469 /* CoffeeShop15UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		352118EE1C1D68E700DF1469 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ericson;
+				TargetAttributes = {
+					352118F51C1D68E700DF1469 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3521190E1C1D68E700DF1469 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 352118F51C1D68E700DF1469;
+					};
+				};
+			};
+			buildConfigurationList = 352118F11C1D68E700DF1469 /* Build configuration list for PBXProject "CoffeeShop15" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 352118ED1C1D68E700DF1469;
+			productRefGroup = 352118F71C1D68E700DF1469 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				352118F51C1D68E700DF1469 /* CoffeeShop15 */,
+				3521190E1C1D68E700DF1469 /* CoffeeShop15UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		352118F41C1D68E700DF1469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352119061C1D68E700DF1469 /* Assets.xcassets in Resources */,
+				352119041C1D68E700DF1469 /* Main.storyboard in Resources */,
+				352119291C1D947C00DF1469 /* TableStory.storyboard in Resources */,
+				35B25CC41C1E824D006EC079 /* WhereAmI12 in Resources */,
+				35C22C631C1DBD1000DAD5A9 /* CityCycleRideLocations.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3521190D1C1D68E700DF1469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		352118F21C1D68E700DF1469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352119011C1D68E700DF1469 /* ViewController.m in Sources */,
+				35B25CC31C1E824D006EC079 /* WAI_MapVC.m in Sources */,
+				352118FE1C1D68E700DF1469 /* AppDelegate.m in Sources */,
+				35B25CC11C1E824D006EC079 /* WAI_LocationDetailVC.m in Sources */,
+				352118FB1C1D68E700DF1469 /* main.m in Sources */,
+				352119271C1D86C300DF1469 /* x4ql_TableViewController2.m in Sources */,
+				352119241C1D83CE00DF1469 /* x4ql_MyTableViewController.m in Sources */,
+				35B25CCD1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m in Sources */,
+				35B25CCA1C1EDBCF006EC079 /* x4ql_Coffees.m in Sources */,
+				35B25CC21C1E824D006EC079 /* WAI_LocationsTableVC.m in Sources */,
+				35B25CC01C1E824D006EC079 /* WAI_LocationAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3521190B1C1D68E700DF1469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352119141C1D68E700DF1469 /* CoffeeShop15UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		352119111C1D68E700DF1469 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 352118F51C1D68E700DF1469 /* CoffeeShop15 */;
+			targetProxy = 352119101C1D68E700DF1469 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		352119021C1D68E700DF1469 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				352119031C1D68E700DF1469 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		352119161C1D68E700DF1469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		352119171C1D68E700DF1469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		352119191C1D68E700DF1469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = CoffeeShop15/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NJU.CoffeeShop15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3521191A1C1D68E700DF1469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = CoffeeShop15/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NJU.CoffeeShop15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3521191C1C1D68E700DF1469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = CoffeeShop15UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NJU.CoffeeShop15UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CoffeeShop15;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3521191D1C1D68E700DF1469 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				INFOPLIST_FILE = CoffeeShop15UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NJU.CoffeeShop15UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CoffeeShop15;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		352118F11C1D68E700DF1469 /* Build configuration list for PBXProject "CoffeeShop15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352119161C1D68E700DF1469 /* Debug */,
+				352119171C1D68E700DF1469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		352119181C1D68E700DF1469 /* Build configuration list for PBXNativeTarget "CoffeeShop15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352119191C1D68E700DF1469 /* Debug */,
+				3521191A1C1D68E700DF1469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3521191B1C1D68E700DF1469 /* Build configuration list for PBXNativeTarget "CoffeeShop15UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3521191C1C1D68E700DF1469 /* Debug */,
+				3521191D1C1D68E700DF1469 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 352118EE1C1D68E700DF1469 /* Project object */;
+}
