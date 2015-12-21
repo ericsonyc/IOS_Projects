@@ -8,30 +8,30 @@
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_MapVC.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_MyTableViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/CityCycleRideLocations.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationAnnotation.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_TableViewController2.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_Coffees.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_Coffees.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/CityCycleRideLocations.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_MyTableViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationDetailVC.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_TableViewController2.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationDetailVC.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_MapVC.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_CommunicateDelegate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_CoffeeAnnotation.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/TableStory.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationsTableVC.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_CoffeeDelegate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/ViewController.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_CoffeeAnnotation.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_MyTableViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationsTableVC.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_Coffees.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/ViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationAnnotation.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_MapVC.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_CommunicateDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_CoffeeDelegate.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/Base.lproj/Main.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/ViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/TableStory.storyboard" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_MyTableViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationsTableVC.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_CoffeeAnnotation.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/AppDelegate.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/x4ql_Coffees.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationsTableVC.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoffeeShop15/WAI_LocationDetailVC.h" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

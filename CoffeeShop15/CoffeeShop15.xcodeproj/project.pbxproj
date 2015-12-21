@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		352118FB1C1D68E700DF1469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352118FA1C1D68E700DF1469 /* main.m */; };
 		352118FE1C1D68E700DF1469 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 352118FD1C1D68E700DF1469 /* AppDelegate.m */; };
 		352119011C1D68E700DF1469 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352119001C1D68E700DF1469 /* ViewController.m */; };
 		352119041C1D68E700DF1469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352119021C1D68E700DF1469 /* Main.storyboard */; };
@@ -29,6 +28,7 @@
 		35B25CCA1C1EDBCF006EC079 /* x4ql_Coffees.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CC91C1EDBCF006EC079 /* x4ql_Coffees.m */; };
 		35B25CCD1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B25CCC1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m */; };
 		35C22C631C1DBD1000DAD5A9 /* CityCycleRideLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35C22C621C1DBD1000DAD5A9 /* CityCycleRideLocations.plist */; };
+		798AA5761C27D08E00A78A72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 352118FA1C1D68E700DF1469 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -287,12 +287,12 @@
 				35B25CC31C1E824D006EC079 /* WAI_MapVC.m in Sources */,
 				352118FE1C1D68E700DF1469 /* AppDelegate.m in Sources */,
 				35B25CC11C1E824D006EC079 /* WAI_LocationDetailVC.m in Sources */,
-				352118FB1C1D68E700DF1469 /* main.m in Sources */,
 				352119271C1D86C300DF1469 /* x4ql_TableViewController2.m in Sources */,
 				352119241C1D83CE00DF1469 /* x4ql_MyTableViewController.m in Sources */,
 				35B25CCD1C1EF02B006EC079 /* x4ql_CoffeeAnnotation.m in Sources */,
 				35B25CCA1C1EDBCF006EC079 /* x4ql_Coffees.m in Sources */,
 				35B25CC21C1E824D006EC079 /* WAI_LocationsTableVC.m in Sources */,
+				798AA5761C27D08E00A78A72 /* main.m in Sources */,
 				35B25CC01C1E824D006EC079 /* WAI_LocationAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
