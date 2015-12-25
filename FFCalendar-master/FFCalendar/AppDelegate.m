@@ -24,8 +24,13 @@
     
     FFCalendarViewController *rootController = [[FFCalendarViewController alloc]init];
     [rootController setArrayWithEvents:[self arrayWithEvents]];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:rootController];
-     self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:rootController];
+    
+    UINavigationController *navigationController=[[UINavigationController alloc]init];
+    [navigationController pushViewController:rootController animated:YES];
+    self.window.rootViewController=navigationController;
+    
+    self.window.backgroundColor = [UIColor yellowColor];
     [self.window makeKeyAndVisible];
     
     return YES;
