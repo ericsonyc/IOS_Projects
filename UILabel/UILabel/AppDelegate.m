@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  UIWindow
+//  UILabel
 //
 //  Created by ericson on 15/12/25.
 //  Copyright © 2015年 ericson. All rights reserved.
@@ -17,15 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-//    _window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    _window.backgroundColor=[UIColor redColor];
-//    UINavigationController *navigator=[[UINavigationController alloc] init];
-//    [_window setRootViewController:navigator];
-//    [_window makeKeyAndVisible];
-//    
-//    _window.windowLevel=UIWindowLevelNormal;
-    
     return YES;
 }
 
