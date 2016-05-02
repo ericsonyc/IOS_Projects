@@ -10,7 +10,6 @@
 		7932DFEC1CD634A000903719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFEB1CD634A000903719 /* main.m */; };
 		7932DFEF1CD634A000903719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFEE1CD634A000903719 /* AppDelegate.m */; };
 		7932DFF21CD634A000903719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFF11CD634A000903719 /* ViewController.m */; };
-		7932DFF51CD634A000903719 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7932DFF31CD634A000903719 /* Main.storyboard */; };
 		7932DFF81CD634A000903719 /* Assignment1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFF61CD634A000903719 /* Assignment1.xcdatamodeld */; };
 		7932DFFA1CD634A000903719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7932DFF91CD634A000903719 /* Assets.xcassets */; };
 		7932DFFD1CD634A000903719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7932DFFB1CD634A000903719 /* LaunchScreen.storyboard */; };
@@ -29,13 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		791F462A1CD6E97600EAB5DA /* ScheduleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleController.h; sourceTree = "<group>"; };
+		791F462B1CD6E9BC00EAB5DA /* ScheduleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleController.m; sourceTree = "<group>"; };
+		791F462E1CD6F8DE00EAB5DA /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheduler.h; sourceTree = "<group>"; };
 		7932DFE71CD634A000903719 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7932DFEB1CD634A000903719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7932DFED1CD634A000903719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7932DFEE1CD634A000903719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7932DFF01CD634A000903719 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7932DFF11CD634A000903719 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7932DFF41CD634A000903719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7932DFF71CD634A000903719 /* Assignment1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment1.xcdatamodel; sourceTree = "<group>"; };
 		7932DFF91CD634A000903719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7932DFFC1CD634A000903719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,12 +93,14 @@
 				7932DFEE1CD634A000903719 /* AppDelegate.m */,
 				7932DFF01CD634A000903719 /* ViewController.h */,
 				7932DFF11CD634A000903719 /* ViewController.m */,
-				7932DFF31CD634A000903719 /* Main.storyboard */,
+				791F462A1CD6E97600EAB5DA /* ScheduleController.h */,
+				791F462B1CD6E9BC00EAB5DA /* ScheduleController.m */,
 				7932DFF91CD634A000903719 /* Assets.xcassets */,
 				7932DFFB1CD634A000903719 /* LaunchScreen.storyboard */,
 				7932DFFE1CD634A000903719 /* Info.plist */,
 				7932DFF61CD634A000903719 /* Assignment1.xcdatamodeld */,
 				7932DFEA1CD634A000903719 /* Supporting Files */,
+				791F462E1CD6F8DE00EAB5DA /* Scheduler.h */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -201,7 +204,6 @@
 			files = (
 				7932DFFD1CD634A000903719 /* LaunchScreen.storyboard in Resources */,
 				7932DFFA1CD634A000903719 /* Assets.xcassets in Resources */,
-				7932DFF51CD634A000903719 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,14 +248,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7932DFF31CD634A000903719 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7932DFF41CD634A000903719 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7932DFFB1CD634A000903719 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +406,7 @@
 				7932E00E1CD634A100903719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7932E00F1CD634A100903719 /* Build configuration list for PBXNativeTarget "Assignment1UITests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +415,7 @@
 				7932E0111CD634A100903719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

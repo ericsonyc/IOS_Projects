@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScheduleController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong,nonatomic) NSArray *list;
-@property (nonatomic,retain)UITableView *  timeTableView;
+@property (nonatomic,retain) UITableView *  timeTableView;
+@property (nonatomic,strong) ScheduleController *scheduleController;
 @end
 
