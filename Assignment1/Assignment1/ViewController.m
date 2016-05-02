@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DDClock.h"
+#import "Scheduler.h"
 
 @interface ViewController ()
 
@@ -38,6 +39,7 @@
     self.timeTableView.dataSource=self;
     
     [[self view]addSubview:self.timeTableView];
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -72,15 +74,26 @@
     //if select the row, it calls this function
     switch (indexPath.row) {
         case 0:
-            if (self.scheduleController==nil) {
-                ScheduleController *scheduler=[[ScheduleController alloc] init];
+//            if (self.scheduleController==nil) {
+//                self.scheduleController=[[Scheduler alloc]init];
+//            }
+//            [[self navigationController] pushViewController:self.scheduleController animated:YES];
+            if (self.weekController==nil) {
+                self.weekController=[[CTWeekViewController alloc]init];
             }
-//            [[self navigationController] pushViewController:self.scheduleController animated:YES]
-            ;
+            [[self navigationController] pushViewController:self.weekController animated:YES];
             break;
         case 1:
+            if (self.calendarController==nil) {
+                self.calendarController=[[Calendar alloc]init];
+            }
+            [[self navigationController] pushViewController:self.calendarController animated:YES];
             break;
         case 2:
+            if (self.planController==nil) {
+                self.planController=[[Plan alloc]init];
+            }
+            [[self navigationController]pushViewController:self.planController animated:YES];
             break;
             
         default:

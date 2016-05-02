@@ -1,22 +1,25 @@
 //
-//  ScheduleController.m
+//  Scheduler.m
 //  Assignment1
 //
-//  Created by ericson on 16/5/2.
+//  Created by ericson on 16/5/1.
 //  Copyright © 2016年 student. All rights reserved.
 //
 
-#import "ScheduleController.h"
+#import "Scheduler.h"
 
-@interface ScheduleController ()
+@interface Scheduler ()
 
 @end
 
-@implementation ScheduleController
+@implementation Scheduler
 
--(void)viewDidLoad{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

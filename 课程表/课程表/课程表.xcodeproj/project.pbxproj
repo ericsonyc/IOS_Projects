@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81387660165F065C00F1895E /* ClassFIeld.m in Sources */ = {isa = PBXBuildFile; fileRef = 8138765F165F065C00F1895E /* ClassFIeld.m */; };
+		8138766A165F11A800F1895E /* Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = 81387669165F11A800F1895E /* Detail.m */; };
+		81827B51165D1A8E0063F29E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81827B50165D1A8E0063F29E /* UIKit.framework */; };
+		81827B53165D1A8E0063F29E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81827B52165D1A8E0063F29E /* Foundation.framework */; };
+		81827B59165D1A8E0063F29E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81827B57165D1A8E0063F29E /* InfoPlist.strings */; };
+		81827B5B165D1A8E0063F29E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81827B5A165D1A8E0063F29E /* main.m */; };
+		81827B5F165D1A8E0063F29E /* rxjsfAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81827B5E165D1A8E0063F29E /* rxjsfAppDelegate.m */; };
+		81827B74165D203A0063F29E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81827B73165D203A0063F29E /* MainWindow.xib */; };
+		81F19FAD165D259000BB874B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F19FAC165D259000BB874B /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8138765E165F065C00F1895E /* ClassFIeld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassFIeld.h; sourceTree = "<group>"; };
+		8138765F165F065C00F1895E /* ClassFIeld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassFIeld.m; sourceTree = "<group>"; };
+		81387668165F11A800F1895E /* Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detail.h; sourceTree = "<group>"; };
+		81387669165F11A800F1895E /* Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detail.m; sourceTree = "<group>"; };
+		81827B4C165D1A8E0063F29E /* 课程表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "课程表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81827B50165D1A8E0063F29E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		81827B52165D1A8E0063F29E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		81827B56165D1A8E0063F29E /* 课程表-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "课程表-Info.plist"; sourceTree = "<group>"; };
+		81827B58165D1A8E0063F29E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81827B5A165D1A8E0063F29E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81827B5C165D1A8E0063F29E /* 课程表-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "课程表-Prefix.pch"; sourceTree = "<group>"; };
+		81827B5D165D1A8E0063F29E /* rxjsfAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rxjsfAppDelegate.h; sourceTree = "<group>"; };
+		81827B5E165D1A8E0063F29E /* rxjsfAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rxjsfAppDelegate.m; sourceTree = "<group>"; };
+		81827B73165D203A0063F29E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		81F19FAB165D259000BB874B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		81F19FAC165D259000BB874B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81827B49165D1A8E0063F29E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81827B51165D1A8E0063F29E /* UIKit.framework in Frameworks */,
+				81827B53165D1A8E0063F29E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81827B41165D1A8D0063F29E = {
+			isa = PBXGroup;
+			children = (
+				81827B54165D1A8E0063F29E /* 课程表 */,
+				81827B4F165D1A8E0063F29E /* Frameworks */,
+				81827B4D165D1A8E0063F29E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81827B4D165D1A8E0063F29E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81827B4C165D1A8E0063F29E /* 课程表.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81827B4F165D1A8E0063F29E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81827B50165D1A8E0063F29E /* UIKit.framework */,
+				81827B52165D1A8E0063F29E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81827B54165D1A8E0063F29E /* 课程表 */ = {
+			isa = PBXGroup;
+			children = (
+				81827B5D165D1A8E0063F29E /* rxjsfAppDelegate.h */,
+				81827B5E165D1A8E0063F29E /* rxjsfAppDelegate.m */,
+				81F19FAB165D259000BB874B /* RootViewController.h */,
+				81F19FAC165D259000BB874B /* RootViewController.m */,
+				8138765E165F065C00F1895E /* ClassFIeld.h */,
+				8138765F165F065C00F1895E /* ClassFIeld.m */,
+				81387668165F11A800F1895E /* Detail.h */,
+				81387669165F11A800F1895E /* Detail.m */,
+				81827B55165D1A8E0063F29E /* Supporting Files */,
+			);
+			path = "课程表";
+			sourceTree = "<group>";
+		};
+		81827B55165D1A8E0063F29E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81827B56165D1A8E0063F29E /* 课程表-Info.plist */,
+				81827B57165D1A8E0063F29E /* InfoPlist.strings */,
+				81827B73165D203A0063F29E /* MainWindow.xib */,
+				81827B5A165D1A8E0063F29E /* main.m */,
+				81827B5C165D1A8E0063F29E /* 课程表-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81827B4B165D1A8E0063F29E /* 课程表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81827B62165D1A8E0063F29E /* Build configuration list for PBXNativeTarget "课程表" */;
+			buildPhases = (
+				81827B48165D1A8E0063F29E /* Sources */,
+				81827B49165D1A8E0063F29E /* Frameworks */,
+				81827B4A165D1A8E0063F29E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "课程表";
+			productName = "课程表";
+			productReference = 81827B4C165D1A8E0063F29E /* 课程表.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81827B43165D1A8D0063F29E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 81827B46165D1A8D0063F29E /* Build configuration list for PBXProject "课程表" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81827B41165D1A8D0063F29E;
+			productRefGroup = 81827B4D165D1A8E0063F29E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81827B4B165D1A8E0063F29E /* 课程表 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81827B4A165D1A8E0063F29E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81827B59165D1A8E0063F29E /* InfoPlist.strings in Resources */,
+				81827B74165D203A0063F29E /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81827B48165D1A8E0063F29E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81827B5B165D1A8E0063F29E /* main.m in Sources */,
+				81827B5F165D1A8E0063F29E /* rxjsfAppDelegate.m in Sources */,
+				81F19FAD165D259000BB874B /* RootViewController.m in Sources */,
+				81387660165F065C00F1895E /* ClassFIeld.m in Sources */,
+				8138766A165F11A800F1895E /* Detail.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81827B57165D1A8E0063F29E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81827B58165D1A8E0063F29E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81827B60165D1A8E0063F29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		81827B61165D1A8E0063F29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81827B63165D1A8E0063F29E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "课程表/课程表-Prefix.pch";
+				INFOPLIST_FILE = "课程表/课程表-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		81827B64165D1A8E0063F29E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "课程表/课程表-Prefix.pch";
+				INFOPLIST_FILE = "课程表/课程表-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81827B46165D1A8D0063F29E /* Build configuration list for PBXProject "课程表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81827B60165D1A8E0063F29E /* Debug */,
+				81827B61165D1A8E0063F29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81827B62165D1A8E0063F29E /* Build configuration list for PBXNativeTarget "课程表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81827B63165D1A8E0063F29E /* Debug */,
+				81827B64165D1A8E0063F29E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81827B43165D1A8D0063F29E /* Project object */;
+}

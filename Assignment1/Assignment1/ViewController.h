@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ScheduleController.h"
+#import "Scheduler.h"
+#import "Calendar.h"
+#import "Plan.h"
+#import "CTWeekViewController.h"
 
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (strong,nonatomic) NSArray *list;
 @property (nonatomic,retain) UITableView *  timeTableView;
-@property (nonatomic,strong) ScheduleController *scheduleController;
+@property (nonatomic,strong) Scheduler *scheduleController;
+@property (nonatomic,strong) Calendar *calendarController;
+@property (nonatomic,strong) Plan *planController;
+
+@property (nonatomic,strong) CTWeekViewController *weekController;
 @end
 

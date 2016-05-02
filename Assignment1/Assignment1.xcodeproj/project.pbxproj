@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791F46301CD6FA5B00EAB5DA /* Scheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F462F1CD6FA5B00EAB5DA /* Scheduler.m */; };
+		791F46331CD6FC6000EAB5DA /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46321CD6FC6000EAB5DA /* Calendar.m */; };
+		791F46361CD6FDD900EAB5DA /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46351CD6FDD900EAB5DA /* Plan.m */; };
+		791F46501CD718C400EAB5DA /* CTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46381CD718C400EAB5DA /* CTCollectionView.m */; };
+		791F46511CD718C400EAB5DA /* CTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F463A1CD718C400EAB5DA /* CTCollectionViewCell.m */; };
+		791F46521CD718C400EAB5DA /* CTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791F463B1CD718C400EAB5DA /* CTCollectionViewCell.xib */; };
+		791F46531CD718C400EAB5DA /* CTCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F463D1CD718C400EAB5DA /* CTCollectionViewDataSource.m */; };
+		791F46541CD718C400EAB5DA /* CTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F463F1CD718C400EAB5DA /* CTCollectionViewLayout.m */; };
+		791F46551CD718C400EAB5DA /* CTCourseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46411CD718C400EAB5DA /* CTCourseInfo.m */; };
+		791F46561CD718C400EAB5DA /* CTDayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46431CD718C400EAB5DA /* CTDayViewCell.m */; };
+		791F46571CD718C400EAB5DA /* CTDayViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791F46441CD718C400EAB5DA /* CTDayViewCell.xib */; };
+		791F46581CD718C400EAB5DA /* CTDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46461CD718C400EAB5DA /* CTDayViewController.m */; };
+		791F46591CD718C400EAB5DA /* CTDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46481CD718C400EAB5DA /* CTDefinition.m */; };
+		791F465A1CD718C400EAB5DA /* CTHeadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F464A1CD718C400EAB5DA /* CTHeadViewCell.m */; };
+		791F465B1CD718C400EAB5DA /* CTHeadViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791F464B1CD718C400EAB5DA /* CTHeadViewCell.xib */; };
+		791F465C1CD718C400EAB5DA /* CTWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F464D1CD718C400EAB5DA /* CTWeekView.m */; };
+		791F465D1CD718C400EAB5DA /* CTWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F464F1CD718C400EAB5DA /* CTWeekViewController.m */; };
 		7932DFEC1CD634A000903719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFEB1CD634A000903719 /* main.m */; };
 		7932DFEF1CD634A000903719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFEE1CD634A000903719 /* AppDelegate.m */; };
 		7932DFF21CD634A000903719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFF11CD634A000903719 /* ViewController.m */; };
@@ -28,9 +45,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		791F462A1CD6E97600EAB5DA /* ScheduleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleController.h; sourceTree = "<group>"; };
-		791F462B1CD6E9BC00EAB5DA /* ScheduleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleController.m; sourceTree = "<group>"; };
 		791F462E1CD6F8DE00EAB5DA /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheduler.h; sourceTree = "<group>"; };
+		791F462F1CD6FA5B00EAB5DA /* Scheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scheduler.m; sourceTree = "<group>"; };
+		791F46311CD6FC3400EAB5DA /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
+		791F46321CD6FC6000EAB5DA /* Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calendar.m; sourceTree = "<group>"; };
+		791F46341CD6FDA000EAB5DA /* Plan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plan.h; sourceTree = "<group>"; };
+		791F46351CD6FDD900EAB5DA /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plan.m; sourceTree = "<group>"; };
+		791F46371CD718C400EAB5DA /* CTCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionView.h; sourceTree = "<group>"; };
+		791F46381CD718C400EAB5DA /* CTCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionView.m; sourceTree = "<group>"; };
+		791F46391CD718C400EAB5DA /* CTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionViewCell.h; sourceTree = "<group>"; };
+		791F463A1CD718C400EAB5DA /* CTCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionViewCell.m; sourceTree = "<group>"; };
+		791F463B1CD718C400EAB5DA /* CTCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTCollectionViewCell.xib; sourceTree = "<group>"; };
+		791F463C1CD718C400EAB5DA /* CTCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionViewDataSource.h; sourceTree = "<group>"; };
+		791F463D1CD718C400EAB5DA /* CTCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionViewDataSource.m; sourceTree = "<group>"; };
+		791F463E1CD718C400EAB5DA /* CTCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionViewLayout.h; sourceTree = "<group>"; };
+		791F463F1CD718C400EAB5DA /* CTCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionViewLayout.m; sourceTree = "<group>"; };
+		791F46401CD718C400EAB5DA /* CTCourseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCourseInfo.h; sourceTree = "<group>"; };
+		791F46411CD718C400EAB5DA /* CTCourseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCourseInfo.m; sourceTree = "<group>"; };
+		791F46421CD718C400EAB5DA /* CTDayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDayViewCell.h; sourceTree = "<group>"; };
+		791F46431CD718C400EAB5DA /* CTDayViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDayViewCell.m; sourceTree = "<group>"; };
+		791F46441CD718C400EAB5DA /* CTDayViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTDayViewCell.xib; sourceTree = "<group>"; };
+		791F46451CD718C400EAB5DA /* CTDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDayViewController.h; sourceTree = "<group>"; };
+		791F46461CD718C400EAB5DA /* CTDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDayViewController.m; sourceTree = "<group>"; };
+		791F46471CD718C400EAB5DA /* CTDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDefinition.h; sourceTree = "<group>"; };
+		791F46481CD718C400EAB5DA /* CTDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDefinition.m; sourceTree = "<group>"; };
+		791F46491CD718C400EAB5DA /* CTHeadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHeadViewCell.h; sourceTree = "<group>"; };
+		791F464A1CD718C400EAB5DA /* CTHeadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHeadViewCell.m; sourceTree = "<group>"; };
+		791F464B1CD718C400EAB5DA /* CTHeadViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTHeadViewCell.xib; sourceTree = "<group>"; };
+		791F464C1CD718C400EAB5DA /* CTWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTWeekView.h; sourceTree = "<group>"; };
+		791F464D1CD718C400EAB5DA /* CTWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWeekView.m; sourceTree = "<group>"; };
+		791F464E1CD718C400EAB5DA /* CTWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTWeekViewController.h; sourceTree = "<group>"; };
+		791F464F1CD718C400EAB5DA /* CTWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWeekViewController.m; sourceTree = "<group>"; };
 		7932DFE71CD634A000903719 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7932DFEB1CD634A000903719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7932DFED1CD634A000903719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,20 +132,48 @@
 		7932DFE91CD634A000903719 /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				791F46371CD718C400EAB5DA /* CTCollectionView.h */,
+				791F46381CD718C400EAB5DA /* CTCollectionView.m */,
+				791F46391CD718C400EAB5DA /* CTCollectionViewCell.h */,
+				791F463A1CD718C400EAB5DA /* CTCollectionViewCell.m */,
+				791F463B1CD718C400EAB5DA /* CTCollectionViewCell.xib */,
+				791F463C1CD718C400EAB5DA /* CTCollectionViewDataSource.h */,
+				791F463D1CD718C400EAB5DA /* CTCollectionViewDataSource.m */,
+				791F463E1CD718C400EAB5DA /* CTCollectionViewLayout.h */,
+				791F463F1CD718C400EAB5DA /* CTCollectionViewLayout.m */,
+				791F46401CD718C400EAB5DA /* CTCourseInfo.h */,
+				791F46411CD718C400EAB5DA /* CTCourseInfo.m */,
+				791F46421CD718C400EAB5DA /* CTDayViewCell.h */,
+				791F46431CD718C400EAB5DA /* CTDayViewCell.m */,
+				791F46441CD718C400EAB5DA /* CTDayViewCell.xib */,
+				791F46451CD718C400EAB5DA /* CTDayViewController.h */,
+				791F46461CD718C400EAB5DA /* CTDayViewController.m */,
+				791F46471CD718C400EAB5DA /* CTDefinition.h */,
+				791F46481CD718C400EAB5DA /* CTDefinition.m */,
+				791F46491CD718C400EAB5DA /* CTHeadViewCell.h */,
+				791F464A1CD718C400EAB5DA /* CTHeadViewCell.m */,
+				791F464B1CD718C400EAB5DA /* CTHeadViewCell.xib */,
+				791F464C1CD718C400EAB5DA /* CTWeekView.h */,
+				791F464D1CD718C400EAB5DA /* CTWeekView.m */,
+				791F464E1CD718C400EAB5DA /* CTWeekViewController.h */,
+				791F464F1CD718C400EAB5DA /* CTWeekViewController.m */,
 				7932E0131CD6368000903719 /* DDClock.m */,
 				7932E0121CD6367500903719 /* DDClock.h */,
 				7932DFED1CD634A000903719 /* AppDelegate.h */,
 				7932DFEE1CD634A000903719 /* AppDelegate.m */,
 				7932DFF01CD634A000903719 /* ViewController.h */,
 				7932DFF11CD634A000903719 /* ViewController.m */,
-				791F462A1CD6E97600EAB5DA /* ScheduleController.h */,
-				791F462B1CD6E9BC00EAB5DA /* ScheduleController.m */,
+				791F462E1CD6F8DE00EAB5DA /* Scheduler.h */,
+				791F462F1CD6FA5B00EAB5DA /* Scheduler.m */,
+				791F46311CD6FC3400EAB5DA /* Calendar.h */,
+				791F46321CD6FC6000EAB5DA /* Calendar.m */,
+				791F46341CD6FDA000EAB5DA /* Plan.h */,
+				791F46351CD6FDD900EAB5DA /* Plan.m */,
 				7932DFF91CD634A000903719 /* Assets.xcassets */,
 				7932DFFB1CD634A000903719 /* LaunchScreen.storyboard */,
 				7932DFFE1CD634A000903719 /* Info.plist */,
 				7932DFF61CD634A000903719 /* Assignment1.xcdatamodeld */,
 				7932DFEA1CD634A000903719 /* Supporting Files */,
-				791F462E1CD6F8DE00EAB5DA /* Scheduler.h */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -202,7 +275,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791F465B1CD718C400EAB5DA /* CTHeadViewCell.xib in Resources */,
+				791F46521CD718C400EAB5DA /* CTCollectionViewCell.xib in Resources */,
 				7932DFFD1CD634A000903719 /* LaunchScreen.storyboard in Resources */,
+				791F46571CD718C400EAB5DA /* CTDayViewCell.xib in Resources */,
 				7932DFFA1CD634A000903719 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,10 +297,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791F465D1CD718C400EAB5DA /* CTWeekViewController.m in Sources */,
+				791F46331CD6FC6000EAB5DA /* Calendar.m in Sources */,
+				791F46511CD718C400EAB5DA /* CTCollectionViewCell.m in Sources */,
 				7932DFF21CD634A000903719 /* ViewController.m in Sources */,
+				791F465A1CD718C400EAB5DA /* CTHeadViewCell.m in Sources */,
+				791F46301CD6FA5B00EAB5DA /* Scheduler.m in Sources */,
+				791F46561CD718C400EAB5DA /* CTDayViewCell.m in Sources */,
+				791F46531CD718C400EAB5DA /* CTCollectionViewDataSource.m in Sources */,
+				791F46581CD718C400EAB5DA /* CTDayViewController.m in Sources */,
 				7932DFEF1CD634A000903719 /* AppDelegate.m in Sources */,
+				791F46501CD718C400EAB5DA /* CTCollectionView.m in Sources */,
+				791F46591CD718C400EAB5DA /* CTDefinition.m in Sources */,
+				791F46541CD718C400EAB5DA /* CTCollectionViewLayout.m in Sources */,
+				791F46361CD6FDD900EAB5DA /* Plan.m in Sources */,
 				7932DFF81CD634A000903719 /* Assignment1.xcdatamodeld in Sources */,
 				7932DFEC1CD634A000903719 /* main.m in Sources */,
+				791F465C1CD718C400EAB5DA /* CTWeekView.m in Sources */,
+				791F46551CD718C400EAB5DA /* CTCourseInfo.m in Sources */,
 				7932E0141CD6368000903719 /* DDClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
