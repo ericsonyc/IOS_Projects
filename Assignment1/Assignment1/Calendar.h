@@ -10,9 +10,14 @@
 #define Calendar_h
 
 #import <UIKit/UIKit.h>
+#import "LGCalendar.h"
 
-@interface Calendar : UIViewController
+@interface Calendar : UIViewController<UITextFieldDelegate, LGCalendarDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (nonatomic, strong) LGCalendar *LGCalendar;
+
+- (IBAction)click;
 
 @end
 

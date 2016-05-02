@@ -24,6 +24,12 @@
 		791F465B1CD718C400EAB5DA /* CTHeadViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791F464B1CD718C400EAB5DA /* CTHeadViewCell.xib */; };
 		791F465C1CD718C400EAB5DA /* CTWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F464D1CD718C400EAB5DA /* CTWeekView.m */; };
 		791F465D1CD718C400EAB5DA /* CTWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F464F1CD718C400EAB5DA /* CTWeekViewController.m */; };
+		791F46661CD73E3700EAB5DA /* LGCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F465F1CD73E3700EAB5DA /* LGCalendar.m */; };
+		791F46671CD73E3700EAB5DA /* LGCalendarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46611CD73E3700EAB5DA /* LGCalendarButton.m */; };
+		791F46681CD73E3700EAB5DA /* LGCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46631CD73E3700EAB5DA /* LGCalendarCell.m */; };
+		791F46691CD73E3700EAB5DA /* LGCalendarHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46651CD73E3700EAB5DA /* LGCalendarHeadView.m */; };
+		791F466C1CD73E4800EAB5DA /* NSDate+calender.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F466B1CD73E4800EAB5DA /* NSDate+calender.m */; };
+		791F466F1CD73E5300EAB5DA /* UIVew+LGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F466E1CD73E5300EAB5DA /* UIVew+LGExtension.m */; };
 		7932DFEC1CD634A000903719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFEB1CD634A000903719 /* main.m */; };
 		7932DFEF1CD634A000903719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFEE1CD634A000903719 /* AppDelegate.m */; };
 		7932DFF21CD634A000903719 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7932DFF11CD634A000903719 /* ViewController.m */; };
@@ -76,6 +82,18 @@
 		791F464D1CD718C400EAB5DA /* CTWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWeekView.m; sourceTree = "<group>"; };
 		791F464E1CD718C400EAB5DA /* CTWeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTWeekViewController.h; sourceTree = "<group>"; };
 		791F464F1CD718C400EAB5DA /* CTWeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTWeekViewController.m; sourceTree = "<group>"; };
+		791F465E1CD73E3700EAB5DA /* LGCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCalendar.h; sourceTree = "<group>"; };
+		791F465F1CD73E3700EAB5DA /* LGCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCalendar.m; sourceTree = "<group>"; };
+		791F46601CD73E3700EAB5DA /* LGCalendarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCalendarButton.h; sourceTree = "<group>"; };
+		791F46611CD73E3700EAB5DA /* LGCalendarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCalendarButton.m; sourceTree = "<group>"; };
+		791F46621CD73E3700EAB5DA /* LGCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCalendarCell.h; sourceTree = "<group>"; };
+		791F46631CD73E3700EAB5DA /* LGCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCalendarCell.m; sourceTree = "<group>"; };
+		791F46641CD73E3700EAB5DA /* LGCalendarHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCalendarHeadView.h; sourceTree = "<group>"; };
+		791F46651CD73E3700EAB5DA /* LGCalendarHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCalendarHeadView.m; sourceTree = "<group>"; };
+		791F466A1CD73E4800EAB5DA /* NSDate+calender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+calender.h"; sourceTree = "<group>"; };
+		791F466B1CD73E4800EAB5DA /* NSDate+calender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+calender.m"; sourceTree = "<group>"; };
+		791F466D1CD73E5300EAB5DA /* UIVew+LGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIVew+LGExtension.h"; sourceTree = "<group>"; };
+		791F466E1CD73E5300EAB5DA /* UIVew+LGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIVew+LGExtension.m"; sourceTree = "<group>"; };
 		7932DFE71CD634A000903719 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7932DFEB1CD634A000903719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7932DFED1CD634A000903719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +150,18 @@
 		7932DFE91CD634A000903719 /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				791F466D1CD73E5300EAB5DA /* UIVew+LGExtension.h */,
+				791F466E1CD73E5300EAB5DA /* UIVew+LGExtension.m */,
+				791F466A1CD73E4800EAB5DA /* NSDate+calender.h */,
+				791F466B1CD73E4800EAB5DA /* NSDate+calender.m */,
+				791F465E1CD73E3700EAB5DA /* LGCalendar.h */,
+				791F465F1CD73E3700EAB5DA /* LGCalendar.m */,
+				791F46601CD73E3700EAB5DA /* LGCalendarButton.h */,
+				791F46611CD73E3700EAB5DA /* LGCalendarButton.m */,
+				791F46621CD73E3700EAB5DA /* LGCalendarCell.h */,
+				791F46631CD73E3700EAB5DA /* LGCalendarCell.m */,
+				791F46641CD73E3700EAB5DA /* LGCalendarHeadView.h */,
+				791F46651CD73E3700EAB5DA /* LGCalendarHeadView.m */,
 				791F46371CD718C400EAB5DA /* CTCollectionView.h */,
 				791F46381CD718C400EAB5DA /* CTCollectionView.m */,
 				791F46391CD718C400EAB5DA /* CTCollectionViewCell.h */,
@@ -297,12 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791F46661CD73E3700EAB5DA /* LGCalendar.m in Sources */,
+				791F46691CD73E3700EAB5DA /* LGCalendarHeadView.m in Sources */,
+				791F46671CD73E3700EAB5DA /* LGCalendarButton.m in Sources */,
 				791F465D1CD718C400EAB5DA /* CTWeekViewController.m in Sources */,
+				791F466C1CD73E4800EAB5DA /* NSDate+calender.m in Sources */,
 				791F46331CD6FC6000EAB5DA /* Calendar.m in Sources */,
 				791F46511CD718C400EAB5DA /* CTCollectionViewCell.m in Sources */,
 				7932DFF21CD634A000903719 /* ViewController.m in Sources */,
 				791F465A1CD718C400EAB5DA /* CTHeadViewCell.m in Sources */,
 				791F46301CD6FA5B00EAB5DA /* Scheduler.m in Sources */,
+				791F46681CD73E3700EAB5DA /* LGCalendarCell.m in Sources */,
 				791F46561CD718C400EAB5DA /* CTDayViewCell.m in Sources */,
 				791F46531CD718C400EAB5DA /* CTCollectionViewDataSource.m in Sources */,
 				791F46581CD718C400EAB5DA /* CTDayViewController.m in Sources */,
@@ -311,6 +346,7 @@
 				791F46591CD718C400EAB5DA /* CTDefinition.m in Sources */,
 				791F46541CD718C400EAB5DA /* CTCollectionViewLayout.m in Sources */,
 				791F46361CD6FDD900EAB5DA /* Plan.m in Sources */,
+				791F466F1CD73E5300EAB5DA /* UIVew+LGExtension.m in Sources */,
 				7932DFF81CD634A000903719 /* Assignment1.xcdatamodeld in Sources */,
 				7932DFEC1CD634A000903719 /* main.m in Sources */,
 				791F465C1CD718C400EAB5DA /* CTWeekView.m in Sources */,

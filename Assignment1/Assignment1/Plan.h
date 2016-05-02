@@ -13,6 +13,7 @@
 
 @interface Plan : UIViewController
 
+@property (strong,nonatomic) UITextView *textView;
 
 @end
 
