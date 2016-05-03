@@ -21,6 +21,9 @@
 		791F46CE1CD837C900EAB5DA /* MHTabBarIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 791F46C71CD837C900EAB5DA /* MHTabBarIndicator.png */; };
 		791F46CF1CD837C900EAB5DA /* MHTabBarIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 791F46C81CD837C900EAB5DA /* MHTabBarIndicator@2x.png */; };
 		791F46D21CD8393D00EAB5DA /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46D11CD8393D00EAB5DA /* ListViewController.m */; };
+		791F46D91CD8DF4E00EAB5DA /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46D81CD8DF4E00EAB5DA /* Message.m */; };
+		791F46DB1CD8E05D00EAB5DA /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791F46DA1CD8E05D00EAB5DA /* TableCell.xib */; };
+		791F46DE1CD8E27600EAB5DA /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46DD1CD8E27600EAB5DA /* MessageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,11 @@
 		791F46C81CD837C900EAB5DA /* MHTabBarIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHTabBarIndicator@2x.png"; sourceTree = "<group>"; };
 		791F46D01CD8393D00EAB5DA /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		791F46D11CD8393D00EAB5DA /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		791F46D71CD8DCDA00EAB5DA /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		791F46D81CD8DF4E00EAB5DA /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		791F46DA1CD8E05D00EAB5DA /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		791F46DC1CD8E16F00EAB5DA /* MessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		791F46DD1CD8E27600EAB5DA /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,11 @@
 				791F46BB1CD79FAD00EAB5DA /* Info.plist */,
 				791F46B31CD79FAD00EAB5DA /* Assignment2.xcdatamodeld */,
 				791F46A71CD79FAD00EAB5DA /* Supporting Files */,
+				791F46D71CD8DCDA00EAB5DA /* Message.h */,
+				791F46D81CD8DF4E00EAB5DA /* Message.m */,
+				791F46DA1CD8E05D00EAB5DA /* TableCell.xib */,
+				791F46DC1CD8E16F00EAB5DA /* MessageCell.h */,
+				791F46DD1CD8E27600EAB5DA /* MessageCell.m */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -168,6 +181,7 @@
 				791F46BA1CD79FAD00EAB5DA /* LaunchScreen.storyboard in Resources */,
 				791F46CC1CD837C900EAB5DA /* MHTabBarInactiveTab.png in Resources */,
 				791F46CF1CD837C900EAB5DA /* MHTabBarIndicator@2x.png in Resources */,
+				791F46DB1CD8E05D00EAB5DA /* TableCell.xib in Resources */,
 				791F46CA1CD837C900EAB5DA /* MHTabBarActiveTab@2x.png in Resources */,
 				791F46B71CD79FAD00EAB5DA /* Assets.xcassets in Resources */,
 				791F46CD1CD837C900EAB5DA /* MHTabBarInactiveTab@2x.png in Resources */,
@@ -185,7 +199,9 @@
 				791F46AF1CD79FAD00EAB5DA /* ViewController.m in Sources */,
 				791F46AC1CD79FAD00EAB5DA /* AppDelegate.m in Sources */,
 				791F46D21CD8393D00EAB5DA /* ListViewController.m in Sources */,
+				791F46D91CD8DF4E00EAB5DA /* Message.m in Sources */,
 				791F46A91CD79FAD00EAB5DA /* main.m in Sources */,
+				791F46DE1CD8E27600EAB5DA /* MessageCell.m in Sources */,
 				791F46B51CD79FAD00EAB5DA /* Assignment2.xcdatamodeld in Sources */,
 				791F46CB1CD837C900EAB5DA /* MHTabBarController.m in Sources */,
 			);

@@ -1,6 +1,8 @@
 
 #import "ListViewController.h"
 #import "MHTabBarController.h"
+#import "Message.h"
+#import "MessageCell.h"
 
 @implementation ListViewController
 
@@ -13,6 +15,13 @@
 {
 	[super viewDidLoad];
 	NSLog(@"%@ viewDidLoad", self.title);
+    self.messageDatas=[NSMutableArray arrayWithCapacity:10];
+}
+
+-(void)reloadData{
+    NSDate *date1=[NSDate date];
+    Message *message1=[Message alloc]initWithMessageNumber:15778945625 messageDate:date1 messageContent:@"This is message one." messageImage:<#(UIImage *)#>
+    [self.messageDatas addObject:]
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -64,21 +73,38 @@
 
 #pragma mark - UITableViewDataSource
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 50;
+	return [self.messageDatas count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 92.0f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	static NSString *CellIdentifier = @"Cell";
-
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	if (cell == nil)
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-
-	cell.selectionStyle = UITableViewCellSelectionStyleGray;
-	cell.textLabel.text = [NSString stringWithFormat:@"%@ - Row %i", self.title, indexPath.row];
+//	static NSString *CellIdentifier = @"Cell";
+//
+//	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//	if (cell == nil)
+//		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+//
+//	cell.selectionStyle = UITableViewCellSelectionStyleGray;
+//	cell.textLabel.text = [NSString stringWithFormat:@"%@ - Row %i", self.title, indexPath.row];
+    
+    static NSString *messageCell=@"messageCell";
+    static BOOL isRegNib=NO;
+    if(!isRegNib){
+        [tableView registerNib:[UINib nibWithNibName:@"TableCell" bundle:nil] forCellReuseIdentifier:messageCell];
+        isRegNib=YES;
+    }
+    MessageCell *cell=[tableView dequeueReusableCellWithIdentifier:messageCell];
+    [cell setupCell:self.messageDatas[indexPath.row];
 	return cell;
 }
 
