@@ -29,6 +29,8 @@ static const NSInteger TagOffset = 1000;
 	UIView *tabButtonsContainerView;
 	UIView *contentContainerView;
 	UIImageView *indicatorImageView;
+    UIView *bottomBarView;
+    UIButton *button;
 }
 
 - (void)viewDidLoad
@@ -39,11 +41,12 @@ static const NSInteger TagOffset = 1000;
 
 	CGRect rect = CGRectMake(0.0f, 0.0f, self.view.bounds.size.width, self.tabBarHeight);
 	tabButtonsContainerView = [[UIView alloc] initWithFrame:rect];
-	tabButtonsContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+	tabButtonsContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleBottomMargin;
 	[self.view addSubview:tabButtonsContainerView];
 
 	rect.origin.y = self.tabBarHeight;
-	rect.size.height = self.view.bounds.size.height - self.tabBarHeight;
+	rect.size.height = self.view.bounds.size.height - self.tabBarHeight-self.bottomBarHeight;
+    NSLog(@"rect.size.height:%f",rect.size.height);
 	contentContainerView = [[UIView alloc] initWithFrame:rect];
 	contentContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	[self.view addSubview:contentContainerView];
@@ -52,6 +55,20 @@ static const NSInteger TagOffset = 1000;
 	[self.view addSubview:indicatorImageView];
 
 	[self reloadTabButtons];
+    
+    rect.origin.y=self.view.bounds.size.height-self.bottomBarHeight;
+    rect.size.height=self.bottomBarHeight;
+//    bottomBarView=[[UIView alloc]initWithFrame:rect];
+//    bottomBarView.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
+    button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame=rect;
+    button.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
+    
+//    button.titleLabel.textColor=[UIColor blackColor];
+    [button setTitle:@"Write" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.backgroundColor=[UIColor whiteColor];
+    [self.view addSubview:button];
 }
 
 - (void)viewWillLayoutSubviews
@@ -102,7 +119,7 @@ static const NSInteger TagOffset = 1000;
 	{
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 		button.tag = TagOffset + index;
-		button.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+		button.titleLabel.font = [UIFont boldSystemFontOfSize:16];
 		button.titleLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
 
 		UIOffset offset = viewController.tabBarItem.titlePositionAdjustment;
@@ -357,6 +374,10 @@ static const NSInteger TagOffset = 1000;
 - (CGFloat)tabBarHeight
 {
 	return 50.0f;
+}
+
+- (CGFloat)bottomBarHeight{
+    return 30.0f;
 }
 
 @end

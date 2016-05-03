@@ -78,7 +78,7 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 
 	cell.selectionStyle = UITableViewCellSelectionStyleGray;
-	cell.textLabel.text = [NSString stringWithFormat:@"%@ - Row %d", self.title, indexPath.row];
+	cell.textLabel.text = [NSString stringWithFormat:@"%@ - Row %i", self.title, indexPath.row];
 	return cell;
 }
 

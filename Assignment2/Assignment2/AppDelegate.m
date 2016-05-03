@@ -22,17 +22,19 @@
     // Override point for customization after application launch.
     ListViewController *listViewController1 = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
     ListViewController *listViewController2 = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
+    ViewController *viewController=[[ViewController alloc]init];
     ListViewController *listViewController3 = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
     
     listViewController1.title = @"Message";
     listViewController2.title = @"Collection";
+    viewController.title=@"Collection";
     listViewController3.title = @"Recommend";
     
     //	listViewController2.tabBarItem.image = [UIImage imageNamed:@"Taijitu"];
     //	listViewController2.tabBarItem.imageInsets = UIEdgeInsetsMake(0.0f, -4.0f, 0.0f, 0.0f);
     //	listViewController2.tabBarItem.titlePositionAdjustment = UIOffsetMake(4.0f, 0.0f);
     
-    NSArray *viewControllers = @[listViewController1, listViewController2, listViewController3];
+    NSArray *viewControllers = @[listViewController1, viewController, listViewController3];
     MHTabBarController *tabBarController = [[MHTabBarController alloc] init];
     
     tabBarController.delegate = self;
@@ -48,14 +50,14 @@
     CGFloat height=[UIScreen mainScreen].bounds.size.height;
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, width, height)];
     self.window.rootViewController = tabBarController;
-    self.window.rootViewController.view.backgroundColor=[UIColor clearColor];
+//    self.window.rootViewController.view.backgroundColor=[UIColor clearColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
 - (BOOL)mh_tabBarController:(MHTabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
 {
-    NSLog(@"mh_tabBarController %@ shouldSelectViewController %@ at index %u", tabBarController, viewController, index);
+//    NSLog(@"mh_tabBarController %@ shouldSelectViewController %@ at index %u", tabBarController, viewController, index);
     
     // Uncomment this to prevent "Tab 3" from being selected.
     //return (index != 2);
@@ -65,7 +67,7 @@
 
 - (void)mh_tabBarController:(MHTabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController atIndex:(NSUInteger)index
 {
-    NSLog(@"mh_tabBarController %@ didSelectViewController %@ at index %u", tabBarController, viewController, index);
+//    NSLog(@"mh_tabBarController %@ didSelectViewController %@ at index %u", tabBarController, viewController, index);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
