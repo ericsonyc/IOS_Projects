@@ -14,9 +14,9 @@
 	listViewController2.title = @"Tab 2";
 	listViewController3.title = @"Tab 3";
 
-	listViewController2.tabBarItem.image = [UIImage imageNamed:@"Taijitu"];
-	listViewController2.tabBarItem.imageInsets = UIEdgeInsetsMake(0.0f, -4.0f, 0.0f, 0.0f);
-	listViewController2.tabBarItem.titlePositionAdjustment = UIOffsetMake(4.0f, 0.0f);
+//	listViewController2.tabBarItem.image = [UIImage imageNamed:@"Taijitu"];
+//	listViewController2.tabBarItem.imageInsets = UIEdgeInsetsMake(0.0f, -4.0f, 0.0f, 0.0f);
+//	listViewController2.tabBarItem.titlePositionAdjustment = UIOffsetMake(4.0f, 0.0f);
 
 	NSArray *viewControllers = @[listViewController1, listViewController2, listViewController3];
 	MHTabBarController *tabBarController = [[MHTabBarController alloc] init];
@@ -30,8 +30,11 @@
 	// Uncomment this to select "Tab 3".
 	//tabBarController.selectedViewController = listViewController3;
 
-	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    CGFloat width=[UIScreen mainScreen].bounds.size.width;
+    CGFloat height=[UIScreen mainScreen].bounds.size.height;
+	self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, width, height)];
 	self.window.rootViewController = tabBarController;
+    self.window.rootViewController.view.backgroundColor=[UIColor clearColor];
 	[self.window makeKeyAndVisible];
 	return YES;
 }
