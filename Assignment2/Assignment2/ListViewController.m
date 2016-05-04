@@ -27,15 +27,15 @@
     Message *message1=[[Message alloc]initWithMessageNumber:@"15778945625" messageDate:[formatter stringFromDate:date1] messageContent:@"This is message one." messageImage:image1];
     [self.messageDatas addObject:message1];
     
-//    NSDate *date2=[NSDate date];
-//    UIImage *image2=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
-//    Message *message2=[[Message alloc]initWithMessageNumber:@"7823354123" messageDate:[formatter stringFromDate:date2] messageContent:@"This is message two." messageImage:image2];
-//    [self.messageDatas addObject:message2];
-//    
-//    NSDate *date3=[NSDate date];
-//    UIImage *image3=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
-//    Message *message3=[[Message alloc]initWithMessageNumber:@"2343463463" messageDate:[formatter stringFromDate:date3] messageContent:@"This is message three." messageImage:image3];
-//    [self.messageDatas addObject:message3];
+    NSDate *date2=[NSDate date];
+    UIImage *image2=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
+    Message *message2=[[Message alloc]initWithMessageNumber:@"7823354123" messageDate:[formatter stringFromDate:date2] messageContent:@"This is message two." messageImage:image2];
+    [self.messageDatas addObject:message2];
+    
+    NSDate *date3=[NSDate date];
+    UIImage *image3=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
+    Message *message3=[[Message alloc]initWithMessageNumber:@"2343463463" messageDate:[formatter stringFromDate:date3] messageContent:@"This is message three." messageImage:image3];
+    [self.messageDatas addObject:message3];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -141,6 +141,20 @@
 //    [cell setupCell:[self.messageDatas objectAtIndex:row]];
 //    cell.textLabel.text = [self.messageDatas objectAtIndex:row];
 	return cell;
+}
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle==UITableViewCellEditingStyleDelete) {
+        [self.messageDatas removeObjectAtIndex:indexPath.row];
+//        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+        [self.tableView reloadData];
+    }else if(editingStyle == UITableViewCellEditingStyleInsert){
+        
+    }
 }
 
 #pragma mark - UITableViewDelegate

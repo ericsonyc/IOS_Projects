@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 
+@property (strong,nonatomic) NSMutableArray *list;
+@property (nonatomic,retain) UITableView *  timeTableView;
+
+@property (nonatomic,retain) UIButton *addBtn;
 
 @end
 

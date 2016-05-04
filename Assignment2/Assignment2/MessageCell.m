@@ -36,7 +36,7 @@
     
     self.time_label.text=[formatter stringFromDate:[NSDate date]];
     self.content_label.text=message.content;
-    self.imageView.image=message.portrait;
+    self.imageView.image=[UIImage imageNamed:@"portrait.png"];
 }
 
 @end

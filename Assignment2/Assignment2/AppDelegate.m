@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "ListViewController.h"
 #import "MHTabBarController.h"
+#import "CollectionController.h"
+#import "RecommendController.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +23,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     ListViewController *listViewController1 = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
-    ListViewController *listViewController2 = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
+//    ListViewController *listViewController2 = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
+//    CollectionController *listViewController2=[[CollectionController alloc]initWithStyle:UITableViewStylePlain];
     ViewController *viewController=[[ViewController alloc]init];
-    ListViewController *listViewController3 = [[ListViewController alloc] initWithStyle:UITableViewStylePlain];
+    RecommendController *listViewController3 = [[RecommendController alloc] initWithStyle:UITableViewStylePlain];
     
     listViewController1.title = @"Message";
-    listViewController2.title = @"Collection";
+//    listViewController2.title = @"Collection";
     viewController.title=@"Collection";
     listViewController3.title = @"Recommend";
     
