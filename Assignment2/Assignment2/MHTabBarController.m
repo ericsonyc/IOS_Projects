@@ -30,7 +30,7 @@ static const NSInteger TagOffset = 1000;
 	UIView *contentContainerView;
 	UIImageView *indicatorImageView;
     UIView *bottomBarView;
-    UIButton *button;
+    UIButton *writeButton;
 }
 
 - (void)viewDidLoad
@@ -60,15 +60,15 @@ static const NSInteger TagOffset = 1000;
     rect.size.height=self.bottomBarHeight;
 //    bottomBarView=[[UIView alloc]initWithFrame:rect];
 //    bottomBarView.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
-    button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame=rect;
-    button.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
+    writeButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    writeButton.frame=rect;
+    writeButton.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
     
 //    button.titleLabel.textColor=[UIColor blackColor];
-    [button setTitle:@"Write" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    button.backgroundColor=[UIColor whiteColor];
-    [self.view addSubview:button];
+    [writeButton setTitle:@"Write" forState:UIControlStateNormal];
+    [writeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    writeButton.backgroundColor=[UIColor whiteColor];
+    [self.view addSubview:writeButton];
 }
 
 - (void)viewWillLayoutSubviews

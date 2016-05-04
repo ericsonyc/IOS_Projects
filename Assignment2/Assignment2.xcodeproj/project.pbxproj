@@ -24,6 +24,7 @@
 		791F46D91CD8DF4E00EAB5DA /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46D81CD8DF4E00EAB5DA /* Message.m */; };
 		791F46DB1CD8E05D00EAB5DA /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791F46DA1CD8E05D00EAB5DA /* TableCell.xib */; };
 		791F46DE1CD8E27600EAB5DA /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46DD1CD8E27600EAB5DA /* MessageCell.m */; };
+		791F46E01CD8F36200EAB5DA /* portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 791F46DF1CD8F36200EAB5DA /* portrait.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		791F46DA1CD8E05D00EAB5DA /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		791F46DC1CD8E16F00EAB5DA /* MessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		791F46DD1CD8E27600EAB5DA /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		791F46DF1CD8F36200EAB5DA /* portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		791F46A61CD79FAD00EAB5DA /* Assignment2 */ = {
 			isa = PBXGroup;
 			children = (
+				791F46DF1CD8F36200EAB5DA /* portrait.png */,
 				791F46D01CD8393D00EAB5DA /* ListViewController.h */,
 				791F46D11CD8393D00EAB5DA /* ListViewController.m */,
 				791F46C11CD837C900EAB5DA /* MHTabBarActiveTab.png */,
@@ -179,6 +182,7 @@
 			files = (
 				791F46CE1CD837C900EAB5DA /* MHTabBarIndicator.png in Resources */,
 				791F46BA1CD79FAD00EAB5DA /* LaunchScreen.storyboard in Resources */,
+				791F46E01CD8F36200EAB5DA /* portrait.png in Resources */,
 				791F46CC1CD837C900EAB5DA /* MHTabBarInactiveTab.png in Resources */,
 				791F46CF1CD837C900EAB5DA /* MHTabBarIndicator@2x.png in Resources */,
 				791F46DB1CD8E05D00EAB5DA /* TableCell.xib in Resources */,
