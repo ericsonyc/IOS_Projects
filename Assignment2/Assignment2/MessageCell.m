@@ -30,14 +30,11 @@
     
 //    NSDate *dateNow = message.now;
     
-    NSLog(@"%@", dateNow);//打印2011-08-17 08:26:57 +0000，这里+0000表示时区
+//    [formatter setDateFormat : @"yyyy年M月d日 H点m分"];
+//    [formatter setDateFormat:@"HH:mm:ss"];
+//    NSLog(@"%@",[formatter stringFromDate:message.now]);
     
-    [formatter setDateFormat : @"yyyy年M月d日 H点m分"];
-    
-    NSLog(@"%@", [formatter stringFromDate:dateNow]);//打印2011年8月17日 16点26分
-    [formatter setDateFormat:@"HH:mm:ss"];
-    NSLog(@"%@",[formatter stringFromDate:message.now]);
-    self.time_label.text=[formatter stringFromDate:message.now];
+    self.time_label.text=[formatter stringFromDate:[NSDate date]];
     self.content_label.text=message.content;
     self.imageView.image=message.portrait;
 }

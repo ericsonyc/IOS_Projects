@@ -12,11 +12,11 @@
 
 @implementation Message
 
--(id)initWithMessageNumber:(NSString *)num messageDate:(NSDate *)time messageContent:(NSString *)neirong messageImage:(UIImage *)image{
+-(id)initWithMessageNumber:(NSString *)num messageDate:(NSString *)time messageContent:(NSString *)neirong messageImage:(UIImage *)image{
     self=[super init];
     if (self) {
         self.number=num;
-        self.now=time;
+        self.nowTime=time;
         self.content=neirong;
         self.portrait=image;
     }

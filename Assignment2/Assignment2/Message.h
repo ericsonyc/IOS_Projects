@@ -15,11 +15,11 @@
 @interface Message : NSObject
 
 @property (nonatomic,assign) NSString *number;
-@property (nonatomic,assign) NSDate *now;
+@property (nonatomic,assign) NSString *nowTime;
 @property (nonatomic,assign) NSString *content;
 @property (nonatomic,assign) UIImage *portrait;
 
-- (id)initWithMessageNumber:(NSString *)num messageDate:(NSDate *)time messageContent:(NSString *)neirong messageImage:(UIImage *)image;
+- (id)initWithMessageNumber:(NSString *)num messageDate:(NSString *)time messageContent:(NSString *)neirong messageImage:(UIImage *)image;
 
 @end
 

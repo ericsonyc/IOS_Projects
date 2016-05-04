@@ -6,34 +6,36 @@
 
 @implementation ListViewController
 
-- (void)dealloc
-{
-	NSLog(@"dealloc %@", self);
-}
-
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
 	NSLog(@"%@ viewDidLoad", self.title);
-    self.messageDatas=[NSMutableArray arrayWithCapacity:10];
+    self.messageDatas=[NSMutableArray arrayWithCapacity:6];
+    
     [self reloadData];
 }
 
 -(void)reloadData{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSTimeZone *timeZone = [NSTimeZone localTimeZone];
+    
+    [formatter setTimeZone:timeZone];
+    [formatter setDateFormat : @"M/d/yyyy h:m"];
+    
     NSDate *date1=[NSDate date];
     UIImage *image1=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
-    Message *message1=[[Message alloc]initWithMessageNumber:@"15778945625" messageDate:date1 messageContent:@"This is message one." messageImage:image1];
+    Message *message1=[[Message alloc]initWithMessageNumber:@"15778945625" messageDate:[formatter stringFromDate:date1] messageContent:@"This is message one." messageImage:image1];
     [self.messageDatas addObject:message1];
     
-    NSDate *date2=[NSDate date];
-    UIImage *image2=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
-    Message *message2=[[Message alloc]initWithMessageNumber:@"7823354123" messageDate:date2 messageContent:@"This is message two." messageImage:image2];
-    [self.messageDatas addObject:message2];
-    
-    NSDate *date3=[NSDate date];
-    UIImage *image3=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
-    Message *message3=[[Message alloc]initWithMessageNumber:@"2343463463" messageDate:date3 messageContent:@"This is message three." messageImage:image3];
-    [self.messageDatas addObject:message3];
+//    NSDate *date2=[NSDate date];
+//    UIImage *image2=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
+//    Message *message2=[[Message alloc]initWithMessageNumber:@"7823354123" messageDate:[formatter stringFromDate:date2] messageContent:@"This is message two." messageImage:image2];
+//    [self.messageDatas addObject:message2];
+//    
+//    NSDate *date3=[NSDate date];
+//    UIImage *image3=[[UIImage alloc]initWithContentsOfFile:@"portrait"];
+//    Message *message3=[[Message alloc]initWithMessageNumber:@"2343463463" messageDate:[formatter stringFromDate:date3] messageContent:@"This is message three." messageImage:image3];
+//    [self.messageDatas addObject:message3];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -91,6 +93,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+//    NSLog(@"message count: %d",[_messageDatas count]);
 	return [self.messageDatas count];
 }
 
@@ -110,13 +113,33 @@
 //	cell.textLabel.text = [NSString stringWithFormat:@"%@ - Row %i", self.title, indexPath.row];
     
     static NSString *messageCell=@"messageCell";
-    static BOOL isRegNib=NO;
-    if(!isRegNib){
-        [tableView registerNib:[UINib nibWithNibName:@"TableCell" bundle:nil] forCellReuseIdentifier:messageCell];
-        isRegNib=YES;
+    MessageCell *cell=(MessageCell *)[tableView dequeueReusableCellWithIdentifier:messageCell];
+    if(cell==nil){
+        NSArray *nib=[[NSBundle mainBundle]loadNibNamed:@"TableCell" owner:self options:nil];
+        for (id oneObject in nib){
+            if ([oneObject isKindOfClass:[MessageCell class]]) {
+                cell=[(MessageCell *)oneObject initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:messageCell];
+                cell.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 92.0f);
+                
+            }
+        }
     }
-    MessageCell *cell=[tableView dequeueReusableCellWithIdentifier:messageCell];
-    [cell setupCell:self.messageDatas[indexPath.row]];
+    [cell setupCell:self.messageDatas[[indexPath row]]];
+    
+//    static NSString *TableSampleIdentifier = @"TableCellIdentifier";
+//    
+//    MessageCell *cell = [tableView dequeueReusableCellWithIdentifier:
+//                             TableSampleIdentifier];
+//    if (cell == nil) {
+//        cell = [[MessageCell alloc]
+//                initWithStyle:UITableViewCellStyleDefault
+//                reuseIdentifier:TableSampleIdentifier];
+//    }
+//    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+//    
+//    NSUInteger row = [indexPath row];
+//    [cell setupCell:[self.messageDatas objectAtIndex:row]];
+//    cell.textLabel.text = [self.messageDatas objectAtIndex:row];
 	return cell;
 }
 
