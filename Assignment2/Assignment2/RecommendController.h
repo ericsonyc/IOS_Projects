@@ -1,10 +1,3 @@
-//
-//  RecommendController.h
-//  Assignment2
-//
-//  Created by ericson on 16/5/4.
-//  Copyright © 2016年 student. All rights reserved.
-//
 
 #ifndef RecommendController_h
 #define RecommendController_h

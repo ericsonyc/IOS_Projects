@@ -1,5 +1,8 @@
 #import <UIKit/UIKit.h>
-@interface ListViewController : UITableViewController
+#import "Assignment2-Swift.h"
+@interface ListViewController : UITableViewController<UISearchBarDelegate,UISearchResultsUpdating,UITableViewDelegate,UITableViewDataSource,LGChatControllerDelegate>
 
-@property NSMutableArray *messageDatas;
+@property (nonatomic,strong) NSMutableArray *messageDatas;
+@property (nonatomic,strong) NSMutableArray *searchList;
+@property (nonatomic,strong) UISearchController *searchController;
 @end

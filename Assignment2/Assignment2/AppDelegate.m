@@ -52,7 +52,10 @@
     CGFloat width=[UIScreen mainScreen].bounds.size.width;
     CGFloat height=[UIScreen mainScreen].bounds.size.height;
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-    self.window.rootViewController = tabBarController;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+    [nav.navigationController pushViewController:tabBarController animated:YES];
+    
+    self.window.rootViewController = nav;
 //    self.window.rootViewController.view.backgroundColor=[UIColor clearColor];
     [self.window makeKeyAndVisible];
     return YES;

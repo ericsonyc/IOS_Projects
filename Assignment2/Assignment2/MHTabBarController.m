@@ -21,6 +21,11 @@
  */
 
 #import "MHTabBarController.h"
+#import "Assignment2-Swift.h"
+
+@interface MHTabBarController () <LGChatControllerDelegate>
+
+@end
 
 static const NSInteger TagOffset = 1000;
 
@@ -36,7 +41,8 @@ static const NSInteger TagOffset = 1000;
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-
+    self.navigationController.navigationBarHidden=YES;
+    
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
 	CGRect rect = CGRectMake(0.0f, 0.0f, self.view.bounds.size.width, self.tabBarHeight);
@@ -68,8 +74,47 @@ static const NSInteger TagOffset = 1000;
     [writeButton setTitle:@"Write" forState:UIControlStateNormal];
     [writeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     writeButton.backgroundColor=[UIColor whiteColor];
+    [writeButton addTarget:self action:@selector(TouchDown) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:writeButton];
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+     self.navigationController.navigationBarHidden=YES;
+}
+
+-(void)perform:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
+    self.navigationController.navigationBarHidden=YES;
+}
+
+-(void)TouchDown{
+    LGChatController *chatController = [LGChatController new];
+    chatController.opponentImage = [UIImage imageNamed:@"portrait"];
+    chatController.title = @"Message";
+//    LGChatMessage *helloWorld = [[LGChatMessage alloc] initWithContent:@"Hello World!" sentByString:[LGChatMessage SentByUserString]];
+//    chatController.messages = @[helloWorld]; // Pass your messages here.
+    chatController.delegate = self;
+    self.navigationController.navigationBarHidden=NO;
+    [[self navigationController] pushViewController:chatController animated:YES];
+    [self.navigationController.navigationItem.backBarButtonItem setAction:@selector(perform:)];
+}
+
+#pragma mark - LGChatControllerDelegate
+
+- (void)chatController:(LGChatController *)chatController didAddNewMessage:(LGChatMessage *)message
+{
+    NSLog(@"Did Add Message: %@", message.content);
+}
+
+- (BOOL)shouldChatController:(LGChatController *)chatController addMessage:(LGChatMessage *)message
+{
+    /*
+     This is implemented just for demonstration so the sent by is randomized.  This way, the full functionality can be demonstrated.
+     */
+    message.sentByString = arc4random_uniform(2) == 0 ? [LGChatMessage SentByOpponentString] : [LGChatMessage SentByUserString];
+    return YES;
+}
+
 
 - (void)viewWillLayoutSubviews
 {
@@ -181,7 +226,7 @@ static const NSInteger TagOffset = 1000;
 
 - (void)setViewControllers:(NSArray *)newViewControllers
 {
-	NSAssert([newViewControllers count] >= 2, @"MHTabBarController requires at least two view controllers");
+	NSAssert([newViewControllers count] >= 1, @"MHTabBarController requires at least two view controllers");
 
 	UIViewController *oldSelectedViewController = self.selectedViewController;
 

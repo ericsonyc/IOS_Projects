@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791B269D1CDA035300D88B16 /* WriteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B269C1CDA035300D88B16 /* WriteController.m */; };
+		791B26A01CDA056F00D88B16 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B269F1CDA056F00D88B16 /* File.swift */; };
+		791B26A21CDA079B00D88B16 /* LGSimpleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791B26A11CDA079B00D88B16 /* LGSimpleChat.swift */; };
+		791B26A51CDA26C700D88B16 /* STBubbleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26A41CDA26C700D88B16 /* STBubbleTableViewCell.m */; };
+		791B26AB1CDA3CB400D88B16 /* STBubbleTableViewCellDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26AA1CDA3CB400D88B16 /* STBubbleTableViewCellDemoViewController.m */; };
+		791B26AD1CDAD23700D88B16 /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 791B26AC1CDAD23700D88B16 /* message.png */; };
 		791F46A91CD79FAD00EAB5DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46A81CD79FAD00EAB5DA /* main.m */; };
 		791F46AC1CD79FAD00EAB5DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46AB1CD79FAD00EAB5DA /* AppDelegate.m */; };
 		791F46AF1CD79FAD00EAB5DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791F46AE1CD79FAD00EAB5DA /* ViewController.m */; };
@@ -27,9 +33,20 @@
 		791F46E01CD8F36200EAB5DA /* portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 791F46DF1CD8F36200EAB5DA /* portrait.png */; };
 		793B02201CD9B70B00907E01 /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B021F1CD9B70B00907E01 /* CollectionController.m */; };
 		793B02231CD9CABA00907E01 /* RecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B02221CD9CABA00907E01 /* RecommendController.m */; };
+		793B02261CD9D02100907E01 /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793B02251CD9D02100907E01 /* MessageController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		791B269B1CDA030200D88B16 /* WriteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteController.h; sourceTree = "<group>"; };
+		791B269C1CDA035300D88B16 /* WriteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteController.m; sourceTree = "<group>"; };
+		791B269E1CDA056F00D88B16 /* Assignment2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignment2-Bridging-Header.h"; sourceTree = "<group>"; };
+		791B269F1CDA056F00D88B16 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		791B26A11CDA079B00D88B16 /* LGSimpleChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGSimpleChat.swift; sourceTree = "<group>"; };
+		791B26A31CDA26C700D88B16 /* STBubbleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBubbleTableViewCell.h; sourceTree = "<group>"; };
+		791B26A41CDA26C700D88B16 /* STBubbleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBubbleTableViewCell.m; sourceTree = "<group>"; };
+		791B26A91CDA3CB400D88B16 /* STBubbleTableViewCellDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBubbleTableViewCellDemoViewController.h; sourceTree = "<group>"; };
+		791B26AA1CDA3CB400D88B16 /* STBubbleTableViewCellDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBubbleTableViewCellDemoViewController.m; sourceTree = "<group>"; };
+		791B26AC1CDAD23700D88B16 /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = Assets.xcassets/message.png; sourceTree = "<group>"; };
 		791F46A41CD79FAD00EAB5DA /* Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		791F46A81CD79FAD00EAB5DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		791F46AA1CD79FAD00EAB5DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +77,8 @@
 		793B021F1CD9B70B00907E01 /* CollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionController.m; sourceTree = "<group>"; };
 		793B02211CD9CA8500907E01 /* RecommendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendController.h; sourceTree = "<group>"; };
 		793B02221CD9CABA00907E01 /* RecommendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendController.m; sourceTree = "<group>"; };
+		793B02241CD9CFEA00907E01 /* MessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageController.h; sourceTree = "<group>"; };
+		793B02251CD9D02100907E01 /* MessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +111,11 @@
 		791F46A61CD79FAD00EAB5DA /* Assignment2 */ = {
 			isa = PBXGroup;
 			children = (
+				791B26A91CDA3CB400D88B16 /* STBubbleTableViewCellDemoViewController.h */,
+				791B26AA1CDA3CB400D88B16 /* STBubbleTableViewCellDemoViewController.m */,
+				791B26A31CDA26C700D88B16 /* STBubbleTableViewCell.h */,
+				791B26A41CDA26C700D88B16 /* STBubbleTableViewCell.m */,
+				791B26A11CDA079B00D88B16 /* LGSimpleChat.swift */,
 				791F46DF1CD8F36200EAB5DA /* portrait.png */,
 				791F46D01CD8393D00EAB5DA /* ListViewController.h */,
 				791F46D11CD8393D00EAB5DA /* ListViewController.m */,
@@ -108,6 +132,7 @@
 				791F46AD1CD79FAD00EAB5DA /* ViewController.h */,
 				791F46AE1CD79FAD00EAB5DA /* ViewController.m */,
 				791F46B61CD79FAD00EAB5DA /* Assets.xcassets */,
+				791B26AC1CDAD23700D88B16 /* message.png */,
 				791F46B81CD79FAD00EAB5DA /* LaunchScreen.storyboard */,
 				791F46BB1CD79FAD00EAB5DA /* Info.plist */,
 				791F46B31CD79FAD00EAB5DA /* Assignment2.xcdatamodeld */,
@@ -121,6 +146,12 @@
 				793B021F1CD9B70B00907E01 /* CollectionController.m */,
 				793B02211CD9CA8500907E01 /* RecommendController.h */,
 				793B02221CD9CABA00907E01 /* RecommendController.m */,
+				793B02241CD9CFEA00907E01 /* MessageController.h */,
+				793B02251CD9D02100907E01 /* MessageController.m */,
+				791B269B1CDA030200D88B16 /* WriteController.h */,
+				791B269C1CDA035300D88B16 /* WriteController.m */,
+				791B269F1CDA056F00D88B16 /* File.swift */,
+				791B269E1CDA056F00D88B16 /* Assignment2-Bridging-Header.h */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -192,6 +223,7 @@
 			files = (
 				791F46CE1CD837C900EAB5DA /* MHTabBarIndicator.png in Resources */,
 				791F46BA1CD79FAD00EAB5DA /* LaunchScreen.storyboard in Resources */,
+				791B26AD1CDAD23700D88B16 /* message.png in Resources */,
 				791F46E01CD8F36200EAB5DA /* portrait.png in Resources */,
 				791F46CC1CD837C900EAB5DA /* MHTabBarInactiveTab.png in Resources */,
 				791F46CF1CD837C900EAB5DA /* MHTabBarIndicator@2x.png in Resources */,
@@ -210,15 +242,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791B26A51CDA26C700D88B16 /* STBubbleTableViewCell.m in Sources */,
 				791F46AF1CD79FAD00EAB5DA /* ViewController.m in Sources */,
 				793B02201CD9B70B00907E01 /* CollectionController.m in Sources */,
 				791F46AC1CD79FAD00EAB5DA /* AppDelegate.m in Sources */,
+				791B269D1CDA035300D88B16 /* WriteController.m in Sources */,
 				791F46D21CD8393D00EAB5DA /* ListViewController.m in Sources */,
+				793B02261CD9D02100907E01 /* MessageController.m in Sources */,
+				791B26A21CDA079B00D88B16 /* LGSimpleChat.swift in Sources */,
 				793B02231CD9CABA00907E01 /* RecommendController.m in Sources */,
 				791F46D91CD8DF4E00EAB5DA /* Message.m in Sources */,
 				791F46A91CD79FAD00EAB5DA /* main.m in Sources */,
 				791F46DE1CD8E27600EAB5DA /* MessageCell.m in Sources */,
+				791B26A01CDA056F00D88B16 /* File.swift in Sources */,
 				791F46B51CD79FAD00EAB5DA /* Assignment2.xcdatamodeld in Sources */,
+				791B26AB1CDA3CB400D88B16 /* STBubbleTableViewCellDemoViewController.m in Sources */,
 				791F46CB1CD837C900EAB5DA /* MHTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,10 +361,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Assignment2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.Assignment2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment2/Assignment2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -334,10 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Assignment2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.Assignment2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignment2/Assignment2-Bridging-Header.h";
 			};
 			name = Release;
 		};
