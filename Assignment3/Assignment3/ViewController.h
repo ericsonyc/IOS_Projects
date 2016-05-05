@@ -15,5 +15,7 @@
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UISearchController *searchController;
 
+@property (nonatomic,strong) NSString *formatString;
+
 @end
 

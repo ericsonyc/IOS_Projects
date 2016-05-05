@@ -14,7 +14,7 @@
 @interface Note : NSObject
 
 @property (nonatomic,strong) NSString *message;
-@property (nonatomic,strong) NSDate *date;
+@property (nonatomic,readwrite,strong) NSDate *date;
 
 -(id)initWithMessage:(NSString *)mess Date:(NSDate *)time;
 @end

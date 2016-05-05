@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Note.h"
+#import "SettingController.h"
 
 @interface ViewController ()
 
@@ -34,10 +35,29 @@
     self.tableView.tableHeaderView = self.searchController.searchBar;
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
+    self.notedatas=[[NSMutableArray alloc]initWithCapacity:6];
     
+    self.formatString=@"yyyy/M/d HH:mm";
     [self loadData];
+    [self sortDates];
     
+    UIBarButtonItem *leftButton=[[UIBarButtonItem alloc]initWithTitle:@"Setting" style:UIBarButtonItemStylePlain target:self action:@selector(selectLeftButton:)];
+    self.navigationItem.leftBarButtonItem=leftButton;
+    
+    UIBarButtonItem *rightButton=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(selectRightButton:)];
+    self.navigationItem.rightBarButtonItem=rightButton;
     [self.view addSubview:self.tableView];
+}
+
+-(void)selectLeftButton:(id)sender{
+    SettingController *setting=[[SettingController alloc]init];
+    self.navigationItem.leftBarButtonItem.title=@"Back";
+    [self.navigationController pushViewController:setting animated:YES];
+}
+
+-(void)selectRightButton:(id)sender{
+    UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"提示" message:@"你点击了导航栏左按钮" delegate:self  cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alter show];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,32 +70,49 @@
     NSTimeZone *timeZone = [NSTimeZone localTimeZone];
     
     [formatter setTimeZone:timeZone];
-    [formatter setDateFormat : @"yyyy/M/d hh:mm"];
-    NSString *stringTime=@"2016/5/3 12:50";
+    [formatter setDateFormat : self.formatString];
+    NSString *stringTime=@"2016/5/3 14:50";
     NSDate *temp=[formatter dateFromString:stringTime];
     Note *note1=[[Note alloc]initWithMessage:@"This is note one!" Date:temp];
     [self.notedatas addObject:note1];
     
-    stringTime=@"2016/5/4 11:20";
+    stringTime=@"2016/5/4 07:20";
     temp=[formatter dateFromString:stringTime];
-    Note *note2=[[Note alloc]initWithMessage:@"This is note two!" Date:[temp mutableCopy]];
+    Note *note2=[[Note alloc]initWithMessage:@"This is note two!" Date:temp];
     [self.notedatas addObject:note2];
     
-    stringTime=@"2016/5/4 13:10";
+    stringTime=@"2016/5/3 13:10";
     temp=[formatter dateFromString:stringTime];
-    Note *note3=[[Note alloc]initWithMessage:@"This is note three!" Date:[temp mutableCopy]];
+    Note *note3=[[Note alloc]initWithMessage:@"This is note three!" Date:temp];
     [self.notedatas addObject:note3];
+}
+
+-(void)sortDates{
+    NSMutableArray *tempdatas=[[NSMutableArray alloc]initWithCapacity:6];
+    for (int i=0; i<[self.notedatas count]; i++) {
+        Note *note=self.notedatas[i];
+        int j=0;
+        for (; j<[tempdatas count]; j++) {
+            Note *temp=tempdatas[j];
+            NSComparisonResult result=[note.date compare:temp.date];
+            if (result==NSOrderedDescending) {
+                break;
+            }
+        }
+        [tempdatas insertObject:note atIndex:j];
+    }
+    self.notedatas=[tempdatas mutableCopy];
 }
 
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     [self.searchnotes removeAllObjects];
-    NSString *pattern=@"\\w*";
-    pattern=[pattern stringByAppendingFormat:@"%@\\w*",self.searchController.searchBar.text];
+    NSString *pattern=@"\\S*";
+    pattern=[pattern stringByAppendingFormat:@"%@\\S*",self.searchController.searchBar.text];
     NSRegularExpression *reg=[NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
     NSMutableArray *list=[[NSMutableArray alloc]initWithCapacity:6];
     for (int i=0; i<[self.notedatas count]; i++) {
         Note *note=[self.notedatas objectAtIndex:i];
-        NSArray* match = [reg matchesInString:note.message options:NSMatchingAnchored range:NSMakeRange(0, [note.message length])];
+        NSArray* match = [reg matchesInString:note.message options:NSMatchingCompleted range:NSMakeRange(0, [note.message length])];
         if (match.count>0) {
             [list addObject:note];
         }
@@ -119,7 +156,7 @@
         NSTimeZone *timeZone = [NSTimeZone localTimeZone];
         
         [formatter setTimeZone:timeZone];
-        [formatter setDateFormat : @"yyyy/M/d hh:mm"];
+        [formatter setDateFormat : self.formatString];
         cell.detailTextLabel.text=[formatter stringFromDate:note.date];
     }else{
         Note *note=(Note *)self.notedatas[indexPath.row];
@@ -128,7 +165,7 @@
         NSTimeZone *timeZone = [NSTimeZone localTimeZone];
         
         [formatter setTimeZone:timeZone];
-        [formatter setDateFormat : @"yy/M/d hh:mm"];
+        [formatter setDateFormat : self.formatString];
         cell.detailTextLabel.text=[formatter stringFromDate:note.date];
     }
     return cell;

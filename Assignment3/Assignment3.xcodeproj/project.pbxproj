@@ -14,6 +14,11 @@
 		791B26CA1CDAD42E00D88B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791B26C91CDAD42E00D88B16 /* Assets.xcassets */; };
 		791B26CD1CDAD42E00D88B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791B26CB1CDAD42E00D88B16 /* LaunchScreen.storyboard */; };
 		791B26D61CDAE62C00D88B16 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26D51CDAE62C00D88B16 /* Note.m */; };
+		791B26D91CDB145F00D88B16 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26D81CDB145F00D88B16 /* SettingController.m */; };
+		791B26DC1CDB191C00D88B16 /* GroupMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26DB1CDB191C00D88B16 /* GroupMessage.m */; };
+		791B26DF1CDB1A0400D88B16 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26DE1CDB1A0400D88B16 /* Message.m */; };
+		791B26E21CDB22FC00D88B16 /* InputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26E11CDB22FC00D88B16 /* InputController.m */; };
+		791B26E41CDB238400D88B16 /* Input.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791B26E31CDB238400D88B16 /* Input.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,15 @@
 		791B26CE1CDAD42E00D88B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		791B26D41CDAE59600D88B16 /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		791B26D51CDAE62C00D88B16 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		791B26D71CDB13CB00D88B16 /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		791B26D81CDB145F00D88B16 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		791B26DA1CDB189C00D88B16 /* GroupMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupMessage.h; sourceTree = "<group>"; };
+		791B26DB1CDB191C00D88B16 /* GroupMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMessage.m; sourceTree = "<group>"; };
+		791B26DD1CDB19AB00D88B16 /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		791B26DE1CDB1A0400D88B16 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		791B26E01CDB22BC00D88B16 /* InputController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputController.h; sourceTree = "<group>"; };
+		791B26E11CDB22FC00D88B16 /* InputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputController.m; sourceTree = "<group>"; };
+		791B26E31CDB238400D88B16 /* Input.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Input.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,15 @@
 				791B26BA1CDAD42E00D88B16 /* Supporting Files */,
 				791B26D41CDAE59600D88B16 /* Note.h */,
 				791B26D51CDAE62C00D88B16 /* Note.m */,
+				791B26D71CDB13CB00D88B16 /* SettingController.h */,
+				791B26D81CDB145F00D88B16 /* SettingController.m */,
+				791B26DA1CDB189C00D88B16 /* GroupMessage.h */,
+				791B26DB1CDB191C00D88B16 /* GroupMessage.m */,
+				791B26DD1CDB19AB00D88B16 /* Message.h */,
+				791B26DE1CDB1A0400D88B16 /* Message.m */,
+				791B26E01CDB22BC00D88B16 /* InputController.h */,
+				791B26E11CDB22FC00D88B16 /* InputController.m */,
+				791B26E31CDB238400D88B16 /* Input.xib */,
 			);
 			path = Assignment3;
 			sourceTree = "<group>";
@@ -141,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791B26E41CDB238400D88B16 /* Input.xib in Resources */,
 				791B26CD1CDAD42E00D88B16 /* LaunchScreen.storyboard in Resources */,
 				791B26CA1CDAD42E00D88B16 /* Assets.xcassets in Resources */,
 			);
@@ -154,10 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				791B26D61CDAE62C00D88B16 /* Note.m in Sources */,
+				791B26DF1CDB1A0400D88B16 /* Message.m in Sources */,
 				791B26C81CDAD42E00D88B16 /* Assignment3.xcdatamodeld in Sources */,
 				791B26C21CDAD42E00D88B16 /* ViewController.m in Sources */,
 				791B26BF1CDAD42E00D88B16 /* AppDelegate.m in Sources */,
+				791B26E21CDB22FC00D88B16 /* InputController.m in Sources */,
+				791B26D91CDB145F00D88B16 /* SettingController.m in Sources */,
 				791B26BC1CDAD42E00D88B16 /* main.m in Sources */,
+				791B26DC1CDB191C00D88B16 /* GroupMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

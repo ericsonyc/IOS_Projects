@@ -1,5 +1,5 @@
 //
-//  Note.m
+//  Message.m
 //  Assignment3
 //
 //  Created by ericson on 16/5/5.
@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Note.h"
+#import "Message.h"
 
-@implementation Note
+@implementation Message
 
--(id)initWithMessage:(NSString *)mess Date:(NSDate *)time{
-    self.message=mess;
-    self.date=time;
+-(id)initWithName:(NSString *)mm{
+    self.name=mm;
     return self;
 }
 
