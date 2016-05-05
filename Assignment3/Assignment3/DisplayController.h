@@ -10,11 +10,17 @@
 #define DisplayController_h
 
 #import <UIKit/UIKit.h>
+#import "Note.h"
 
 @interface DisplayController : UIViewController
 
-@property (nonatomic,retain) UITextView *textView;
+@property (nonatomic,strong) UITextView *textView;
+@property (nonatomic,strong) UILabel *datelabel;
+@property (nonatomic,strong) UILabel *likelabel;
+@property (nonatomic,strong) UISwitch *switchView;
+@property (nonatomic,strong) Note *note;
 
+-(void)passMessage:(Note *)nn;
 @end
 
 #endif /* DisplayController_h */

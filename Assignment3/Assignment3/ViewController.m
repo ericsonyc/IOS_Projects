@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SettingController.h"
 #import "AddController.h"
+#import "DisplayController.h"
 
 @interface ViewController ()
 
@@ -233,7 +234,21 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    Note *note;
+    if(self.searchController.active){
+        note=[self.notedatas objectAtIndex:indexPath.row];
+    }else{
+        note=[self.notedatas objectAtIndex:indexPath.row];
+    }
     
+    DisplayController *displayController=[[DisplayController alloc]init];
+    
+    [self.navigationController pushViewController:displayController animated:YES];
+    [displayController passMessage:note];
+}
+
+-(void)clickBack:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
