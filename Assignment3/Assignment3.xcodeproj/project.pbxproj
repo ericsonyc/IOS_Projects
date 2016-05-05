@@ -17,8 +17,9 @@
 		791B26D91CDB145F00D88B16 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26D81CDB145F00D88B16 /* SettingController.m */; };
 		791B26DC1CDB191C00D88B16 /* GroupMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26DB1CDB191C00D88B16 /* GroupMessage.m */; };
 		791B26DF1CDB1A0400D88B16 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26DE1CDB1A0400D88B16 /* Message.m */; };
-		791B26E21CDB22FC00D88B16 /* InputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B26E11CDB22FC00D88B16 /* InputController.m */; };
 		791B26E41CDB238400D88B16 /* Input.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791B26E31CDB238400D88B16 /* Input.xib */; };
+		791FFDD71CDB41FD000097AB /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDD61CDB41FD000097AB /* InputView.m */; };
+		791FFDDA1CDB5E12000097AB /* AddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDD91CDB5E12000097AB /* AddController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,9 +41,11 @@
 		791B26DB1CDB191C00D88B16 /* GroupMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMessage.m; sourceTree = "<group>"; };
 		791B26DD1CDB19AB00D88B16 /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		791B26DE1CDB1A0400D88B16 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		791B26E01CDB22BC00D88B16 /* InputController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputController.h; sourceTree = "<group>"; };
-		791B26E11CDB22FC00D88B16 /* InputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputController.m; sourceTree = "<group>"; };
 		791B26E31CDB238400D88B16 /* Input.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Input.xib; sourceTree = "<group>"; };
+		791FFDD51CDB417A000097AB /* InputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		791FFDD61CDB41FD000097AB /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		791FFDD81CDB5D99000097AB /* AddController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddController.h; sourceTree = "<group>"; };
+		791FFDD91CDB5E12000097AB /* AddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +95,11 @@
 				791B26DB1CDB191C00D88B16 /* GroupMessage.m */,
 				791B26DD1CDB19AB00D88B16 /* Message.h */,
 				791B26DE1CDB1A0400D88B16 /* Message.m */,
-				791B26E01CDB22BC00D88B16 /* InputController.h */,
-				791B26E11CDB22FC00D88B16 /* InputController.m */,
 				791B26E31CDB238400D88B16 /* Input.xib */,
+				791FFDD51CDB417A000097AB /* InputView.h */,
+				791FFDD61CDB41FD000097AB /* InputView.m */,
+				791FFDD81CDB5D99000097AB /* AddController.h */,
+				791FFDD91CDB5E12000097AB /* AddController.m */,
 			);
 			path = Assignment3;
 			sourceTree = "<group>";
@@ -182,8 +187,9 @@
 				791B26C81CDAD42E00D88B16 /* Assignment3.xcdatamodeld in Sources */,
 				791B26C21CDAD42E00D88B16 /* ViewController.m in Sources */,
 				791B26BF1CDAD42E00D88B16 /* AppDelegate.m in Sources */,
-				791B26E21CDB22FC00D88B16 /* InputController.m in Sources */,
 				791B26D91CDB145F00D88B16 /* SettingController.m in Sources */,
+				791FFDDA1CDB5E12000097AB /* AddController.m in Sources */,
+				791FFDD71CDB41FD000097AB /* InputView.m in Sources */,
 				791B26BC1CDAD42E00D88B16 /* main.m in Sources */,
 				791B26DC1CDB191C00D88B16 /* GroupMessage.m in Sources */,
 			);
@@ -326,6 +332,7 @@
 				791B26D31CDAD42E00D88B16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

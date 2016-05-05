@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Note.h"
 #import "SettingController.h"
+#import "AddController.h"
 
 @interface ViewController ()
 
@@ -51,13 +52,13 @@
 
 -(void)selectLeftButton:(id)sender{
     SettingController *setting=[[SettingController alloc]init];
-    self.navigationItem.leftBarButtonItem.title=@"Back";
+//    self.navigationItem.leftBarButtonItem.title=@"Back";
     [self.navigationController pushViewController:setting animated:YES];
 }
 
 -(void)selectRightButton:(id)sender{
-    UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"提示" message:@"你点击了导航栏左按钮" delegate:self  cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    [alter show];
+    AddController *addcontroller=[[AddController alloc]init];
+    [self.navigationController pushViewController:addcontroller animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
