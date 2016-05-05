@@ -10,9 +10,11 @@
 #define AddController_h
 
 #import <UIKit/UIKit.h>
+#import "InputView.h"
 
 @interface AddController : UIViewController
 
+@property (nonatomic,retain) InputView *inputView;
 
 @end
 

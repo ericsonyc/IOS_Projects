@@ -1,12 +1,6 @@
-//
-//  ViewController.h
-//  Assignment3
-//
-//  Created by ericson on 16/5/5.
-//  Copyright © 2016年 student. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
+#import "Note.h"
 
 @interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UISearchResultsUpdating>
 
@@ -16,6 +10,8 @@
 @property (nonatomic,strong) UISearchController *searchController;
 
 @property (nonatomic,strong) NSString *formatString;
+
+-(void)updateData:(Note *)note;
 
 @end
 

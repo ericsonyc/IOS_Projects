@@ -15,8 +15,9 @@
 
 @property (nonatomic,strong) NSString *message;
 @property (nonatomic,readwrite,strong) NSDate *date;
+@property (nonatomic) BOOL switchLike;
 
--(id)initWithMessage:(NSString *)mess Date:(NSDate *)time;
+-(id)initWithMessage:(NSString *)mess Date:(NSDate *)time like:(BOOL)like;
 @end
 
 #endif /* Note_h */

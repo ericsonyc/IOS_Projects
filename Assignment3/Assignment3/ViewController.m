@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "Note.h"
 #import "SettingController.h"
 #import "AddController.h"
 
@@ -50,6 +49,13 @@
     [self.view addSubview:self.tableView];
 }
 
+-(void)updateData:(Note *)note{
+    Note *temp=[[Note alloc]initWithMessage:note.message Date:note.date like:note.switchLike];
+    [self.notedatas addObject:temp];
+    [self sortDates];
+    [self.tableView reloadData];
+}
+
 -(void)selectLeftButton:(id)sender{
     SettingController *setting=[[SettingController alloc]init];
 //    self.navigationItem.leftBarButtonItem.title=@"Back";
@@ -74,17 +80,17 @@
     [formatter setDateFormat : self.formatString];
     NSString *stringTime=@"2016/5/3 14:50";
     NSDate *temp=[formatter dateFromString:stringTime];
-    Note *note1=[[Note alloc]initWithMessage:@"This is note one!" Date:temp];
+    Note *note1=[[Note alloc]initWithMessage:@"This is note one!" Date:temp like:YES];
     [self.notedatas addObject:note1];
     
     stringTime=@"2016/5/4 07:20";
     temp=[formatter dateFromString:stringTime];
-    Note *note2=[[Note alloc]initWithMessage:@"This is note two!" Date:temp];
+    Note *note2=[[Note alloc]initWithMessage:@"This is note two!" Date:temp like:NO];
     [self.notedatas addObject:note2];
     
     stringTime=@"2016/5/3 13:10";
     temp=[formatter dateFromString:stringTime];
-    Note *note3=[[Note alloc]initWithMessage:@"This is note three!" Date:temp];
+    Note *note3=[[Note alloc]initWithMessage:@"This is note three!" Date:temp like:NO];
     [self.notedatas addObject:note3];
 }
 
@@ -150,6 +156,15 @@
     if(cell==nil){
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:messageCell];
     }
+    if([cell.subviews count]<=1){
+        CGRect rect=cell.frame;
+        CGRect frame=CGRectMake(rect.size.width-60, rect.size.height/2-15, 50, 30);
+        UISwitch *swi=[[UISwitch alloc]initWithFrame:frame];
+        swi.tag=indexPath.row;
+        [swi addTarget:self action:@selector(switchClick:) forControlEvents:UIControlEventValueChanged];
+        [cell addSubview:swi];
+    }
+    
     if (self.searchController.active) {
         Note *note=(Note *)self.searchnotes[indexPath.row];
         cell.textLabel.text=note.message;
@@ -159,6 +174,9 @@
         [formatter setTimeZone:timeZone];
         [formatter setDateFormat : self.formatString];
         cell.detailTextLabel.text=[formatter stringFromDate:note.date];
+        UISwitch *swi=(UISwitch *)[cell.subviews objectAtIndex:1];
+        [swi setOn:note.switchLike];
+        
     }else{
         Note *note=(Note *)self.notedatas[indexPath.row];
         cell.textLabel.text=note.message;
@@ -168,8 +186,21 @@
         [formatter setTimeZone:timeZone];
         [formatter setDateFormat : self.formatString];
         cell.detailTextLabel.text=[formatter stringFromDate:note.date];
+        UISwitch *swi=(UISwitch *)[cell.subviews objectAtIndex:1];
+        [swi setOn:note.switchLike];
     }
+
     return cell;
+}
+
+-(void)switchClick:(id)sender{
+    UISwitch *switchView=(UISwitch *)sender;
+    NSInteger row=switchView.tag;
+    if (self.searchController.active) {
+        ((Note *)[self.searchnotes objectAtIndex:row]).switchLike=switchView.isOn;
+    }else{
+        ((Note *)[self.notedatas objectAtIndex:row]).switchLike=switchView.isOn;
+    }
 }
 
 -(BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{

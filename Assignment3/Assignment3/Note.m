@@ -11,9 +11,10 @@
 
 @implementation Note
 
--(id)initWithMessage:(NSString *)mess Date:(NSDate *)time{
+-(id)initWithMessage:(NSString *)mess Date:(NSDate *)time like:(BOOL)like{
     self.message=mess;
     self.date=time;
+    self.switchLike=like;
     return self;
 }
 

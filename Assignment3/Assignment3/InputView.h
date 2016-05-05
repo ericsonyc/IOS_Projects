@@ -3,6 +3,7 @@
 #define InputView_h
 
 #import <UIKit/UIKit.h>
+#import "Note.h"
 @interface InputView : UIView
 
 @property (nonatomic,strong) IBOutlet UITextField *textView;
@@ -11,6 +12,8 @@
 @property (nonatomic,strong) IBOutlet UISwitch *likeornot;
 
 -(void)setup:(NSString *)date like:(BOOL)like;
+
+-(id)getValue;
 
 @end
 

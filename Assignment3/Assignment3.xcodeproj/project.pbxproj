@@ -20,6 +20,7 @@
 		791B26E41CDB238400D88B16 /* Input.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791B26E31CDB238400D88B16 /* Input.xib */; };
 		791FFDD71CDB41FD000097AB /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDD61CDB41FD000097AB /* InputView.m */; };
 		791FFDDA1CDB5E12000097AB /* AddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDD91CDB5E12000097AB /* AddController.m */; };
+		791FFDDF1CDB81B0000097AB /* DisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDDE1CDB81B0000097AB /* DisplayController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		791FFDD61CDB41FD000097AB /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 		791FFDD81CDB5D99000097AB /* AddController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddController.h; sourceTree = "<group>"; };
 		791FFDD91CDB5E12000097AB /* AddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddController.m; sourceTree = "<group>"; };
+		791FFDDD1CDB816D000097AB /* DisplayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayController.h; sourceTree = "<group>"; };
+		791FFDDE1CDB81B0000097AB /* DisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				791FFDD61CDB41FD000097AB /* InputView.m */,
 				791FFDD81CDB5D99000097AB /* AddController.h */,
 				791FFDD91CDB5E12000097AB /* AddController.m */,
+				791FFDDD1CDB816D000097AB /* DisplayController.h */,
+				791FFDDE1CDB81B0000097AB /* DisplayController.m */,
 			);
 			path = Assignment3;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791FFDDF1CDB81B0000097AB /* DisplayController.m in Sources */,
 				791B26D61CDAE62C00D88B16 /* Note.m in Sources */,
 				791B26DF1CDB1A0400D88B16 /* Message.m in Sources */,
 				791B26C81CDAD42E00D88B16 /* Assignment3.xcdatamodeld in Sources */,
