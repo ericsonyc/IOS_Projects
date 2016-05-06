@@ -2,6 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "GroupController.h"
 #import "Group.h"
+#import "GroupCell.h"
 
 @implementation GroupController
 
@@ -27,9 +28,9 @@
 }
 
 -(void)loadData{
-    Group *contact1=[[Group alloc]initWithMessageName:<#(NSString *)#> messageTitle:<#(NSString *)#> messageMembers:<#(NSMutableArray *)#>;
+    Group *contact1=[[Group alloc]initWithMessageName:@"Group1" messageTitle:@"Title1" messageMembers:[[NSMutableArray alloc]initWithObjects:@"Mem1",@"Mem2",@"Mem3", nil]];
     
-    Contact *contact2=[[Contact alloc]initWithMessageName:@"This is contact two." image:@"contact.png"];
+    Group *contact2=[[Group alloc]initWithMessageName:@"Group2" messageTitle:@"Title2" messageMembers:[[NSMutableArray alloc]initWithObjects:@"Mem1",@"Mem2",@"Mem3", nil]];
     
     [self.datas addObject:contact1];
     [self.datas addObject:contact2];
@@ -85,32 +86,26 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 50.0f;
+    return 80.0f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     static NSString *messageCell=@"messageCell";
-    ContactCell *cell=[tableView dequeueReusableCellWithIdentifier:messageCell];
+    GroupCell *cell=[tableView dequeueReusableCellWithIdentifier:messageCell];
     if(cell==nil){
-        NSArray *views=[[NSBundle mainBundle]loadNibNamed:@"ContactCell" owner:nil options:nil];
-        cell=(ContactCell *)[views lastObject];
-        CGRect frame=cell.imageView.frame;
-        frame.size.width=50.0f;
-        [cell.imageView setFrame:frame];
+        NSArray *views=[[NSBundle mainBundle]loadNibNamed:@"GroupCell" owner:nil options:nil];
+        cell=(GroupCell *)[views lastObject];
     }
-    Contact *record;
+    Group *record;
     //    if (self.searchController.active) {
     //        record=(Record *)self.searchDatas[indexPath.row];
     //    }else{
     //        record=(Record *)self.datas[indexPath.row];
     //    }
-    record=(Contact *)self.datas[indexPath.row];
-    cell.contentLabel.text=record.name;
-    cell.contentLabel.font=[UIFont fontWithName:@"Arial" size:15];
-    
-    cell.imageView.image=[UIImage imageNamed:record.imageUrl];
+    record=(Group *)self.datas[indexPath.row];
+    [cell setupCell:record];
     
     return cell;
 }

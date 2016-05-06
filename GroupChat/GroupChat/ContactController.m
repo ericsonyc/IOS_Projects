@@ -107,11 +107,12 @@
 //        record=(Record *)self.datas[indexPath.row];
 //    }
     record=(Contact *)self.datas[indexPath.row];
-    cell.contentLabel.text=record.name;
-    cell.contentLabel.font=[UIFont fontWithName:@"Arial" size:15];
-    
-    cell.imageView.image=[UIImage imageNamed:record.imageUrl];
-    
+//    cell.contentLabel.text=record.name;
+//    cell.contentLabel.font=[UIFont fontWithName:@"Arial" size:15];
+//    
+//    cell.imageView.image=[UIImage imageNamed:record.imageUrl];
+
+    [cell setupCell:record];
     return cell;
 }
 
