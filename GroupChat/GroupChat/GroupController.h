@@ -1,13 +1,16 @@
-//
-//  GroupController.h
-//  GroupChat
-//
-//  Created by ericson on 16/5/6.
-//  Copyright © 2016年 student. All rights reserved.
-//
 
 #ifndef GroupController_h
 #define GroupController_h
 
+#import<UIKit/UIKit.h>
+@interface GroupController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UISearchResultsUpdating>
+
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *datas;
+@property (nonatomic,strong) NSMutableArray *searchDatas;
+
+@property (nonatomic,strong) UISearchController *searchController;
+
+@end
 
 #endif /* GroupController_h */

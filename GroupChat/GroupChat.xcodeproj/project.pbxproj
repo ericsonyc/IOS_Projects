@@ -30,6 +30,10 @@
 		791FFE701CDC53C5000097AB /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE6F1CDC53C5000097AB /* ContactCell.xib */; };
 		791FFE731CDC55C4000097AB /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE721CDC55C4000097AB /* ContactCell.m */; };
 		791FFE751CDC5D01000097AB /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE741CDC5D01000097AB /* contact.png */; };
+		791FFE781CDC5E4F000097AB /* GroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE771CDC5E4F000097AB /* GroupController.m */; };
+		791FFE7B1CDC5F3F000097AB /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE7A1CDC5F3F000097AB /* Group.m */; };
+		791FFE7D1CDC5FFE000097AB /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE7C1CDC5FFE000097AB /* GroupCell.xib */; };
+		791FFE801CDC6175000097AB /* GroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE7F1CDC6175000097AB /* GroupCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,12 @@
 		791FFE721CDC55C4000097AB /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
 		791FFE741CDC5D01000097AB /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
 		791FFE761CDC5DF6000097AB /* GroupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupController.h; sourceTree = "<group>"; };
+		791FFE771CDC5E4F000097AB /* GroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupController.m; sourceTree = "<group>"; };
+		791FFE791CDC5EB2000097AB /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		791FFE7A1CDC5F3F000097AB /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		791FFE7C1CDC5FFE000097AB /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
+		791FFE7E1CDC60F0000097AB /* GroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupCell.h; sourceTree = "<group>"; };
+		791FFE7F1CDC6175000097AB /* GroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,12 @@
 				791FFE711CDC552D000097AB /* ContactCell.h */,
 				791FFE721CDC55C4000097AB /* ContactCell.m */,
 				791FFE761CDC5DF6000097AB /* GroupController.h */,
+				791FFE771CDC5E4F000097AB /* GroupController.m */,
+				791FFE791CDC5EB2000097AB /* Group.h */,
+				791FFE7A1CDC5F3F000097AB /* Group.m */,
+				791FFE7C1CDC5FFE000097AB /* GroupCell.xib */,
+				791FFE7E1CDC60F0000097AB /* GroupCell.h */,
+				791FFE7F1CDC6175000097AB /* GroupCell.m */,
 			);
 			path = GroupChat;
 			sourceTree = "<group>";
@@ -212,6 +228,7 @@
 				791FFE571CDC23CA000097AB /* MHTabBarInactiveTab.png in Resources */,
 				791FFE5A1CDC23CA000097AB /* MHTabBarIndicator@2x.png in Resources */,
 				791FFE551CDC23CA000097AB /* MHTabBarActiveTab@2x.png in Resources */,
+				791FFE7D1CDC5FFE000097AB /* GroupCell.xib in Resources */,
 				791FFE421CDC2365000097AB /* Assets.xcassets in Resources */,
 				791FFE581CDC23CA000097AB /* MHTabBarInactiveTab@2x.png in Resources */,
 				791FFE701CDC53C5000097AB /* ContactCell.xib in Resources */,
@@ -226,14 +243,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791FFE801CDC6175000097AB /* GroupCell.m in Sources */,
 				791FFE731CDC55C4000097AB /* ContactCell.m in Sources */,
 				791FFE681CDC2DE5000097AB /* RecordController.m in Sources */,
 				791FFE3A1CDC2365000097AB /* ViewController.m in Sources */,
 				791FFE371CDC2365000097AB /* AppDelegate.m in Sources */,
+				791FFE781CDC5E4F000097AB /* GroupController.m in Sources */,
 				791FFE631CDC2B5A000097AB /* Record.m in Sources */,
 				791FFE5D1CDC24E7000097AB /* ListViewController.m in Sources */,
 				791FFE341CDC2365000097AB /* main.m in Sources */,
 				791FFE6B1CDC5066000097AB /* ContactController.m in Sources */,
+				791FFE7B1CDC5F3F000097AB /* Group.m in Sources */,
 				791FFE6E1CDC533A000097AB /* Contact.m in Sources */,
 				791FFE401CDC2365000097AB /* GroupChat.xcdatamodeld in Sources */,
 				791FFE651CDC2C48000097AB /* RecordCell.m in Sources */,
