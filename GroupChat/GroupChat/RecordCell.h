@@ -1,10 +1,3 @@
-//
-//  RecordCell.h
-//  GroupChat
-//
-//  Created by ericson on 16/5/6.
-//  Copyright © 2016年 student. All rights reserved.
-//
 
 #ifndef RecordCell_h
 #define RecordCell_h

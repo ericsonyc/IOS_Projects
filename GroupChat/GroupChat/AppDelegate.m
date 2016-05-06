@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ListViewController.h"
 #import "RecordController.h"
+#import "ContactController.h"
 
 @interface AppDelegate ()
 
@@ -24,15 +25,17 @@
     //ListViewController *listViewController3=[[ListViewController alloc]initWithStyle:UITableViewStylePlain];
     
     RecordController *recordController=[[RecordController alloc]init];
+    ContactController *contactController=[[ContactController alloc]init];
     
     
     //listViewController1.title = @"Records";
     //listViewController2.title = @"Contacts";
     //listViewController3.title = @"Groups";
     recordController.title=@"Records";
+    contactController.title=@"Contacts";
     
     
-    NSArray *viewControllers = @[recordController];
+    NSArray *viewControllers = @[recordController,contactController];
     MHTabBarController *tabBarController = [[MHTabBarController alloc] init];
     
     tabBarController.delegate = self;
