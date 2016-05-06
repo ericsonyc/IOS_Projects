@@ -3,7 +3,7 @@
 #import "GroupController.h"
 #import "Group.h"
 #import "GroupCell.h"
-#import "AddView.h"
+#import "AddController.h"
 
 @implementation GroupController
 
@@ -14,7 +14,7 @@
     self.searchDatas=[[NSMutableArray alloc]initWithCapacity:6];
     
     CGRect rectStatus=[[UIApplication sharedApplication]statusBarFrame];
-    //    CGRect rectNav=self.navigationController.navigationBar.frame;
+    
     
     CGRect frame=[[UIScreen mainScreen] bounds];
     CGRect rect=CGRectMake(0, rectStatus.origin.y, frame.size.width, frame.size.height-rectStatus.size.height);
@@ -52,9 +52,9 @@
 }
 
 -(void)addBtnClick:(id)sender{
-    NSArray *views=[[NSBundle mainBundle]loadNibNamed:@"AddGroup" owner:nil options:nil];
-    AddView *addview=(AddView *)[views lastObject];
-    [self.view addSubview:addview];
+    AddController *addGroup=[[AddController alloc]init];
+    self.navigationController.navigationBarHidden=NO;
+    [self.navigationController pushViewController:addGroup animated:YES];
 }
 
 -(void)loadData{

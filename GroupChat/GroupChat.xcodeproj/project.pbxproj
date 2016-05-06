@@ -20,7 +20,7 @@
 		791FFE581CDC23CA000097AB /* MHTabBarInactiveTab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE511CDC23CA000097AB /* MHTabBarInactiveTab@2x.png */; };
 		791FFE591CDC23CA000097AB /* MHTabBarIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE521CDC23CA000097AB /* MHTabBarIndicator.png */; };
 		791FFE5A1CDC23CA000097AB /* MHTabBarIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE531CDC23CA000097AB /* MHTabBarIndicator@2x.png */; };
-		791FFE5D1CDC24E7000097AB /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE5C1CDC24E7000097AB /* ListViewController.m */; };
+		791FFE5D1CDC24E7000097AB /* AddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE5C1CDC24E7000097AB /* AddController.m */; };
 		791FFE5F1CDC293B000097AB /* RecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE5E1CDC293B000097AB /* RecordCell.xib */; };
 		791FFE631CDC2B5A000097AB /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE621CDC2B5A000097AB /* Record.m */; };
 		791FFE651CDC2C48000097AB /* RecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE641CDC2C48000097AB /* RecordCell.m */; };
@@ -59,8 +59,8 @@
 		791FFE511CDC23CA000097AB /* MHTabBarInactiveTab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHTabBarInactiveTab@2x.png"; sourceTree = "<group>"; };
 		791FFE521CDC23CA000097AB /* MHTabBarIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MHTabBarIndicator.png; sourceTree = "<group>"; };
 		791FFE531CDC23CA000097AB /* MHTabBarIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MHTabBarIndicator@2x.png"; sourceTree = "<group>"; };
-		791FFE5B1CDC24E7000097AB /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		791FFE5C1CDC24E7000097AB /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		791FFE5B1CDC24E7000097AB /* AddController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddController.h; sourceTree = "<group>"; };
+		791FFE5C1CDC24E7000097AB /* AddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddController.m; sourceTree = "<group>"; };
 		791FFE5E1CDC293B000097AB /* RecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordCell.xib; sourceTree = "<group>"; };
 		791FFE601CDC2A7F000097AB /* RecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordCell.h; sourceTree = "<group>"; };
 		791FFE611CDC2AE9000097AB /* Record.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
@@ -122,8 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				791FFE741CDC5D01000097AB /* contact.png */,
-				791FFE5B1CDC24E7000097AB /* ListViewController.h */,
-				791FFE5C1CDC24E7000097AB /* ListViewController.m */,
 				791FFE4C1CDC23CA000097AB /* MHTabBarActiveTab.png */,
 				791FFE4D1CDC23CA000097AB /* MHTabBarActiveTab@2x.png */,
 				791FFE4E1CDC23CA000097AB /* MHTabBarController.h */,
@@ -168,6 +166,8 @@
 				791FFE871CDC8463000097AB /* AddGroup.xib */,
 				791FFE891CDC85EE000097AB /* AddView.h */,
 				791FFE8A1CDC8684000097AB /* AddView.m */,
+				791FFE5B1CDC24E7000097AB /* AddController.h */,
+				791FFE5C1CDC24E7000097AB /* AddController.m */,
 			);
 			path = GroupChat;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				791FFE371CDC2365000097AB /* AppDelegate.m in Sources */,
 				791FFE781CDC5E4F000097AB /* GroupController.m in Sources */,
 				791FFE631CDC2B5A000097AB /* Record.m in Sources */,
-				791FFE5D1CDC24E7000097AB /* ListViewController.m in Sources */,
+				791FFE5D1CDC24E7000097AB /* AddController.m in Sources */,
 				791FFE861CDC6BE9000097AB /* SearchView.m in Sources */,
 				791FFE341CDC2365000097AB /* main.m in Sources */,
 				791FFE6B1CDC5066000097AB /* ContactController.m in Sources */,
