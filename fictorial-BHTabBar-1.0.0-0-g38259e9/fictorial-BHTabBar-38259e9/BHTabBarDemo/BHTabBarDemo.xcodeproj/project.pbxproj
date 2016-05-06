@@ -155,6 +155,8 @@
 /* Begin PBXProject section */
 		605798C413C4C8A800D7494A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 605798C713C4C8A800D7494A /* Build configuration list for PBXProject "BHTabBarDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -262,6 +264,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BHTabBarDemo/BHTabBarDemo-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "BHTabBarDemo/BHTabBarDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -275,6 +278,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BHTabBarDemo/BHTabBarDemo-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "BHTabBarDemo/BHTabBarDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;

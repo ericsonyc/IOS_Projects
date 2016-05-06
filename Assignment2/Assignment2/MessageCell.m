@@ -1,10 +1,3 @@
-//
-//  MessageCell.m
-//  Assignment2
-//
-//  Created by ericson on 16/5/3.
-//  Copyright © 2016年 student. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "MessageCell.h"

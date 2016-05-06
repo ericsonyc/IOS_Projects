@@ -1,10 +1,5 @@
 
 #import "MHTabBarController.h"
-#import "Assignment2-Swift.h"
-
-@interface MHTabBarController () <LGChatControllerDelegate>
-
-@end
 
 static const NSInteger TagOffset = 1000;
 
@@ -13,87 +8,37 @@ static const NSInteger TagOffset = 1000;
 	UIView *tabButtonsContainerView;
 	UIView *contentContainerView;
 	UIImageView *indicatorImageView;
-    UIView *bottomBarView;
-    UIButton *writeButton;
 }
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-    self.navigationController.navigationBarHidden=YES;
-    
+
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
 	CGRect rect = CGRectMake(0.0f, 0.0f, self.view.bounds.size.width, self.tabBarHeight);
 	tabButtonsContainerView = [[UIView alloc] initWithFrame:rect];
-	tabButtonsContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleBottomMargin;
+	tabButtonsContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	[self.view addSubview:tabButtonsContainerView];
 
 	rect.origin.y = self.tabBarHeight;
-	rect.size.height = self.view.bounds.size.height - self.tabBarHeight-self.bottomBarHeight;
-    NSLog(@"rect.size.height:%f",rect.size.height);
+	rect.size.height = self.view.bounds.size.height - self.tabBarHeight;
 	contentContainerView = [[UIView alloc] initWithFrame:rect];
 	contentContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	[self.view addSubview:contentContainerView];
 
 	indicatorImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MHTabBarIndicator"]];
 	[self.view addSubview:indicatorImageView];
+    
+//    self.navigationController.navigationBarHidden=YES;
 
 	[self reloadTabButtons];
-    
-    rect.origin.y=self.view.bounds.size.height-self.bottomBarHeight;
-    rect.size.height=self.bottomBarHeight;
-//    bottomBarView=[[UIView alloc]initWithFrame:rect];
-//    bottomBarView.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
-    writeButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    writeButton.frame=rect;
-    writeButton.autoresizingMask=UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleWidth;
-    
-//    button.titleLabel.textColor=[UIColor blackColor];
-    [writeButton setTitle:@"Write" forState:UIControlStateNormal];
-    [writeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    writeButton.backgroundColor=[UIColor whiteColor];
-    [writeButton addTarget:self action:@selector(TouchDown) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:writeButton];
 }
 
--(void)viewWillAppear:(BOOL)animated{
-     self.navigationController.navigationBarHidden=YES;
-}
-
--(void)perform:(id)sender{
-    [self.navigationController popViewControllerAnimated:YES];
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     self.navigationController.navigationBarHidden=YES;
 }
-
--(void)TouchDown{
-    LGChatController *chatController = [LGChatController new];
-    chatController.opponentImage = [UIImage imageNamed:@"portrait"];
-    chatController.title = @"Message";
-//    LGChatMessage *helloWorld = [[LGChatMessage alloc] initWithContent:@"Hello World!" sentByString:[LGChatMessage SentByUserString]];
-//    chatController.messages = @[helloWorld]; // Pass your messages here.
-    chatController.delegate = self;
-    self.navigationController.navigationBarHidden=NO;
-    [[self navigationController] pushViewController:chatController animated:YES];
-    [self.navigationController.navigationItem.backBarButtonItem setAction:@selector(perform:)];
-}
-
-#pragma mark - LGChatControllerDelegate
-
-- (void)chatController:(LGChatController *)chatController didAddNewMessage:(LGChatMessage *)message
-{
-    NSLog(@"Did Add Message: %@", message.content);
-}
-
-- (BOOL)shouldChatController:(LGChatController *)chatController addMessage:(LGChatMessage *)message
-{
-    /*
-     This is implemented just for demonstration so the sent by is randomized.  This way, the full functionality can be demonstrated.
-     */
-    message.sentByString = arc4random_uniform(2) == 0 ? [LGChatMessage SentByOpponentString] : [LGChatMessage SentByUserString];
-    return YES;
-}
-
 
 - (void)viewWillLayoutSubviews
 {
@@ -143,7 +88,7 @@ static const NSInteger TagOffset = 1000;
 	{
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 		button.tag = TagOffset + index;
-		button.titleLabel.font = [UIFont boldSystemFontOfSize:16];
+		button.titleLabel.font = [UIFont boldSystemFontOfSize:18];
 		button.titleLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
 
 		UIOffset offset = viewController.tabBarItem.titlePositionAdjustment;
@@ -205,7 +150,7 @@ static const NSInteger TagOffset = 1000;
 
 - (void)setViewControllers:(NSArray *)newViewControllers
 {
-	NSAssert([newViewControllers count] >= 1, @"MHTabBarController requires at least two view controllers");
+	NSAssert([newViewControllers count] >= 1, @"MHTabBarController requires at least one view controllers");
 
 	UIViewController *oldSelectedViewController = self.selectedViewController;
 
@@ -398,10 +343,6 @@ static const NSInteger TagOffset = 1000;
 - (CGFloat)tabBarHeight
 {
 	return 50.0f;
-}
-
-- (CGFloat)bottomBarHeight{
-    return 30.0f;
 }
 
 @end
