@@ -21,6 +21,7 @@
 		791FFDD71CDB41FD000097AB /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDD61CDB41FD000097AB /* InputView.m */; };
 		791FFDDA1CDB5E12000097AB /* AddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDD91CDB5E12000097AB /* AddController.m */; };
 		791FFDDF1CDB81B0000097AB /* DisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDDE1CDB81B0000097AB /* DisplayController.m */; };
+		791FFE091CDBB694000097AB /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE081CDBB694000097AB /* note.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		791FFDD91CDB5E12000097AB /* AddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddController.m; sourceTree = "<group>"; };
 		791FFDDD1CDB816D000097AB /* DisplayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayController.h; sourceTree = "<group>"; };
 		791FFDDE1CDB81B0000097AB /* DisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayController.m; sourceTree = "<group>"; };
+		791FFE081CDBB694000097AB /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = note.png; path = Assets.xcassets/note.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				791B26C01CDAD42E00D88B16 /* ViewController.h */,
 				791B26C11CDAD42E00D88B16 /* ViewController.m */,
 				791B26C91CDAD42E00D88B16 /* Assets.xcassets */,
+				791FFE081CDBB694000097AB /* note.png */,
 				791B26CB1CDAD42E00D88B16 /* LaunchScreen.storyboard */,
 				791B26CE1CDAD42E00D88B16 /* Info.plist */,
 				791B26C61CDAD42E00D88B16 /* Assignment3.xcdatamodeld */,
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				791B26E41CDB238400D88B16 /* Input.xib in Resources */,
+				791FFE091CDBB694000097AB /* note.png in Resources */,
 				791B26CD1CDAD42E00D88B16 /* LaunchScreen.storyboard in Resources */,
 				791B26CA1CDAD42E00D88B16 /* Assets.xcassets in Resources */,
 			);

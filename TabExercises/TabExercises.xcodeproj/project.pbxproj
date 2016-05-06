@@ -11,9 +11,16 @@
 		791FFDF11CDBB35F000097AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDF01CDBB35F000097AB /* AppDelegate.m */; };
 		791FFDF41CDBB35F000097AB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDF31CDBB35F000097AB /* FirstViewController.m */; };
 		791FFDF71CDBB35F000097AB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFDF61CDBB35F000097AB /* SecondViewController.m */; };
-		791FFDFA1CDBB35F000097AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791FFDF81CDBB35F000097AB /* Main.storyboard */; };
 		791FFDFC1CDBB35F000097AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791FFDFB1CDBB35F000097AB /* Assets.xcassets */; };
 		791FFDFF1CDBB35F000097AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791FFDFD1CDBB35F000097AB /* LaunchScreen.storyboard */; };
+		791FFE131CDC1E9C000097AB /* NGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE0B1CDC1E9C000097AB /* NGTabBar.m */; };
+		791FFE141CDC1E9C000097AB /* NGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE0D1CDC1E9C000097AB /* NGTabBarController.m */; };
+		791FFE151CDC1E9C000097AB /* NGTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE111CDC1E9C000097AB /* NGTabBarItem.m */; };
+		791FFE1A1CDC1EB3000097AB /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE171CDC1EB3000097AB /* UINavigationController+NGTabBarNavigationDelegate.m */; };
+		791FFE1B1CDC1EB3000097AB /* UIViewController+NGTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE191CDC1EB3000097AB /* UIViewController+NGTabBarItem.m */; };
+		791FFE1F1CDC1F8D000097AB /* NGColoredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE1E1CDC1F8D000097AB /* NGColoredViewController.m */; };
+		791FFE241CDC1F98000097AB /* NGTestTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE211CDC1F98000097AB /* NGTestTabBarController.m */; };
+		791FFE251CDC1F98000097AB /* NGVerticalTabBarControllerDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE221CDC1F98000097AB /* NGVerticalTabBarControllerDemo-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +32,29 @@
 		791FFDF31CDBB35F000097AB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		791FFDF51CDBB35F000097AB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		791FFDF61CDBB35F000097AB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		791FFDF91CDBB35F000097AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		791FFDFB1CDBB35F000097AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		791FFDFE1CDBB35F000097AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		791FFE001CDBB35F000097AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		791FFE0A1CDC1E9C000097AB /* NGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBar.h; sourceTree = "<group>"; };
+		791FFE0B1CDC1E9C000097AB /* NGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBar.m; sourceTree = "<group>"; };
+		791FFE0C1CDC1E9C000097AB /* NGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarController.h; sourceTree = "<group>"; };
+		791FFE0D1CDC1E9C000097AB /* NGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBarController.m; sourceTree = "<group>"; };
+		791FFE0E1CDC1E9C000097AB /* NGTabBarControllerAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarControllerAnimation.h; sourceTree = "<group>"; };
+		791FFE0F1CDC1E9C000097AB /* NGTabBarControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarControllerDelegate.h; sourceTree = "<group>"; };
+		791FFE101CDC1E9C000097AB /* NGTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarItem.h; sourceTree = "<group>"; };
+		791FFE111CDC1E9C000097AB /* NGTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTabBarItem.m; sourceTree = "<group>"; };
+		791FFE121CDC1E9C000097AB /* NGTabBarPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTabBarPosition.h; sourceTree = "<group>"; };
+		791FFE161CDC1EB3000097AB /* UINavigationController+NGTabBarNavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NGTabBarNavigationDelegate.h"; sourceTree = "<group>"; };
+		791FFE171CDC1EB3000097AB /* UINavigationController+NGTabBarNavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NGTabBarNavigationDelegate.m"; sourceTree = "<group>"; };
+		791FFE181CDC1EB3000097AB /* UIViewController+NGTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NGTabBarItem.h"; sourceTree = "<group>"; };
+		791FFE191CDC1EB3000097AB /* UIViewController+NGTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NGTabBarItem.m"; sourceTree = "<group>"; };
+		791FFE1C1CDC1ECD000097AB /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		791FFE1D1CDC1F8D000097AB /* NGColoredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGColoredViewController.h; sourceTree = "<group>"; };
+		791FFE1E1CDC1F8D000097AB /* NGColoredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGColoredViewController.m; sourceTree = "<group>"; };
+		791FFE201CDC1F98000097AB /* NGTestTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTestTabBarController.h; sourceTree = "<group>"; };
+		791FFE211CDC1F98000097AB /* NGTestTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTestTabBarController.m; sourceTree = "<group>"; };
+		791FFE221CDC1F98000097AB /* NGVerticalTabBarControllerDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NGVerticalTabBarControllerDemo-Info.plist"; sourceTree = "<group>"; };
+		791FFE231CDC1F98000097AB /* NGVerticalTabBarControllerDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NGVerticalTabBarControllerDemo-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +87,32 @@
 		791FFDEB1CDBB35F000097AB /* TabExercises */ = {
 			isa = PBXGroup;
 			children = (
+				791FFE201CDC1F98000097AB /* NGTestTabBarController.h */,
+				791FFE211CDC1F98000097AB /* NGTestTabBarController.m */,
+				791FFE221CDC1F98000097AB /* NGVerticalTabBarControllerDemo-Info.plist */,
+				791FFE231CDC1F98000097AB /* NGVerticalTabBarControllerDemo-Prefix.pch */,
+				791FFE1D1CDC1F8D000097AB /* NGColoredViewController.h */,
+				791FFE1E1CDC1F8D000097AB /* NGColoredViewController.m */,
+				791FFE1C1CDC1ECD000097AB /* Prefix.pch */,
+				791FFE161CDC1EB3000097AB /* UINavigationController+NGTabBarNavigationDelegate.h */,
+				791FFE171CDC1EB3000097AB /* UINavigationController+NGTabBarNavigationDelegate.m */,
+				791FFE181CDC1EB3000097AB /* UIViewController+NGTabBarItem.h */,
+				791FFE191CDC1EB3000097AB /* UIViewController+NGTabBarItem.m */,
+				791FFE0A1CDC1E9C000097AB /* NGTabBar.h */,
+				791FFE0B1CDC1E9C000097AB /* NGTabBar.m */,
+				791FFE0C1CDC1E9C000097AB /* NGTabBarController.h */,
+				791FFE0D1CDC1E9C000097AB /* NGTabBarController.m */,
+				791FFE0E1CDC1E9C000097AB /* NGTabBarControllerAnimation.h */,
+				791FFE0F1CDC1E9C000097AB /* NGTabBarControllerDelegate.h */,
+				791FFE101CDC1E9C000097AB /* NGTabBarItem.h */,
+				791FFE111CDC1E9C000097AB /* NGTabBarItem.m */,
+				791FFE121CDC1E9C000097AB /* NGTabBarPosition.h */,
 				791FFDEF1CDBB35F000097AB /* AppDelegate.h */,
 				791FFDF01CDBB35F000097AB /* AppDelegate.m */,
 				791FFDF21CDBB35F000097AB /* FirstViewController.h */,
 				791FFDF31CDBB35F000097AB /* FirstViewController.m */,
 				791FFDF51CDBB35F000097AB /* SecondViewController.h */,
 				791FFDF61CDBB35F000097AB /* SecondViewController.m */,
-				791FFDF81CDBB35F000097AB /* Main.storyboard */,
 				791FFDFB1CDBB35F000097AB /* Assets.xcassets */,
 				791FFDFD1CDBB35F000097AB /* LaunchScreen.storyboard */,
 				791FFE001CDBB35F000097AB /* Info.plist */,
@@ -143,7 +188,7 @@
 			files = (
 				791FFDFF1CDBB35F000097AB /* LaunchScreen.storyboard in Resources */,
 				791FFDFC1CDBB35F000097AB /* Assets.xcassets in Resources */,
-				791FFDFA1CDBB35F000097AB /* Main.storyboard in Resources */,
+				791FFE251CDC1F98000097AB /* NGVerticalTabBarControllerDemo-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,24 +199,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791FFE1B1CDC1EB3000097AB /* UIViewController+NGTabBarItem.m in Sources */,
+				791FFE241CDC1F98000097AB /* NGTestTabBarController.m in Sources */,
+				791FFE141CDC1E9C000097AB /* NGTabBarController.m in Sources */,
 				791FFDF71CDBB35F000097AB /* SecondViewController.m in Sources */,
+				791FFE131CDC1E9C000097AB /* NGTabBar.m in Sources */,
 				791FFDF11CDBB35F000097AB /* AppDelegate.m in Sources */,
 				791FFDF41CDBB35F000097AB /* FirstViewController.m in Sources */,
+				791FFE151CDC1E9C000097AB /* NGTabBarItem.m in Sources */,
 				791FFDEE1CDBB35F000097AB /* main.m in Sources */,
+				791FFE1F1CDC1F8D000097AB /* NGColoredViewController.m in Sources */,
+				791FFE1A1CDC1EB3000097AB /* UINavigationController+NGTabBarNavigationDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		791FFDF81CDBB35F000097AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				791FFDF91CDBB35F000097AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		791FFDFD1CDBB35F000097AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -306,6 +350,7 @@
 				791FFE051CDBB35F000097AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
