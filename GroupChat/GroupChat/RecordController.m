@@ -28,7 +28,10 @@
     
     _searchController.hidesNavigationBarDuringPresentation = NO;
     
-    _searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
+    CGRect searchrect=CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
+    
+    _searchController.searchBar.frame = searchrect;
+    
     
     self.tableView.tableHeaderView = self.searchController.searchBar;
     

@@ -21,6 +21,13 @@
     self.tableView.dataSource=self;
     self.tableView.delegate=self;
     
+    NSArray *views=[[NSBundle mainBundle]loadNibNamed:@"Search" owner:nil options:nil];
+    self.search=(SearchView *)[views lastObject];
+    self.search.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44.0f);
+    self.search.searchBar.delegate=self;
+    self.searchflag=NO;
+    self.tableView.tableHeaderView = self.search;
+    
     [self loadData];
     
     [self.view addSubview:self.tableView];
@@ -38,6 +45,45 @@
 -(void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+    self.search.searchBar.text=@"";
+    self.searchflag=NO;
+    self.search.searchBar.showsCancelButton=NO;
+    [self.tableView reloadData];
+}
+
+-(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    NSString *pattern=@"\\S*";
+    pattern=[pattern stringByAppendingFormat:@"%@\\S*",self.search.searchBar.text];
+    NSRegularExpression *reg=[NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
+    NSMutableArray *list=[[NSMutableArray alloc]initWithCapacity:6];
+    for (int i=0; i<[self.datas count]; i++) {
+        Contact *record=[self.datas objectAtIndex:i];
+        NSArray* match = [reg matchesInString:record.name options:NSMatchingCompleted range:NSMakeRange(0, [record.name length])];
+        if (match.count>0) {
+            [list addObject:record];
+         
+        }
+    }
+    //    NSMutableArray *List=[self.searchList mutableCopy];
+    self.searchDatas=[list mutableCopy];
+    [self.tableView reloadData];
+    
+}
+
+#pragma mark - UISearchResultsUpdating
+-(BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
+    self.search.searchBar.showsCancelButton=YES;
+    self.searchflag=YES;
+    return YES;
+}
+
+-(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
+    self.search.searchBar.showsCancelButton=NO;
+    return YES;
 }
 
 #pragma mark - UISearchResultsUpdating
@@ -80,8 +126,12 @@
 //    }else{
 //        return [self.datas count];
 //    }
+    if (self.searchflag) {
+        return [self.searchDatas count];
+    }else{
+        return [self.datas count];
+    }
 
-    return [self.datas count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -101,12 +151,13 @@
         [cell.imageView setFrame:frame];
     }
     Contact *record;
-//    if (self.searchController.active) {
-//        record=(Record *)self.searchDatas[indexPath.row];
-//    }else{
-//        record=(Record *)self.datas[indexPath.row];
-//    }
-    record=(Contact *)self.datas[indexPath.row];
+
+    if (self.searchflag) {
+        record=(Contact *)self.searchDatas[indexPath.row];
+    }else{
+        record=(Contact *)self.datas[indexPath.row];
+    }
+    
 //    cell.contentLabel.text=record.name;
 //    cell.contentLabel.font=[UIFont fontWithName:@"Arial" size:15];
 //    

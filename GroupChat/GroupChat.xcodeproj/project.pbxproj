@@ -34,6 +34,10 @@
 		791FFE7B1CDC5F3F000097AB /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE7A1CDC5F3F000097AB /* Group.m */; };
 		791FFE7D1CDC5FFE000097AB /* GroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE7C1CDC5FFE000097AB /* GroupCell.xib */; };
 		791FFE801CDC6175000097AB /* GroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE7F1CDC6175000097AB /* GroupCell.m */; };
+		791FFE821CDC6A3E000097AB /* Search.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE811CDC6A3E000097AB /* Search.xib */; };
+		791FFE861CDC6BE9000097AB /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE851CDC6BE9000097AB /* SearchView.m */; };
+		791FFE881CDC8463000097AB /* AddGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE871CDC8463000097AB /* AddGroup.xib */; };
+		791FFE8B1CDC8684000097AB /* AddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE8A1CDC8684000097AB /* AddView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +83,12 @@
 		791FFE7C1CDC5FFE000097AB /* GroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupCell.xib; sourceTree = "<group>"; };
 		791FFE7E1CDC60F0000097AB /* GroupCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupCell.h; sourceTree = "<group>"; };
 		791FFE7F1CDC6175000097AB /* GroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupCell.m; sourceTree = "<group>"; };
+		791FFE811CDC6A3E000097AB /* Search.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Search.xib; sourceTree = "<group>"; };
+		791FFE841CDC6BB5000097AB /* SearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		791FFE851CDC6BE9000097AB /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		791FFE871CDC8463000097AB /* AddGroup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGroup.xib; sourceTree = "<group>"; };
+		791FFE891CDC85EE000097AB /* AddView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddView.h; sourceTree = "<group>"; };
+		791FFE8A1CDC8684000097AB /* AddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +162,12 @@
 				791FFE7C1CDC5FFE000097AB /* GroupCell.xib */,
 				791FFE7E1CDC60F0000097AB /* GroupCell.h */,
 				791FFE7F1CDC6175000097AB /* GroupCell.m */,
+				791FFE811CDC6A3E000097AB /* Search.xib */,
+				791FFE841CDC6BB5000097AB /* SearchView.h */,
+				791FFE851CDC6BE9000097AB /* SearchView.m */,
+				791FFE871CDC8463000097AB /* AddGroup.xib */,
+				791FFE891CDC85EE000097AB /* AddView.h */,
+				791FFE8A1CDC8684000097AB /* AddView.m */,
 			);
 			path = GroupChat;
 			sourceTree = "<group>";
@@ -221,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791FFE821CDC6A3E000097AB /* Search.xib in Resources */,
 				791FFE751CDC5D01000097AB /* contact.png in Resources */,
 				791FFE5F1CDC293B000097AB /* RecordCell.xib in Resources */,
 				791FFE591CDC23CA000097AB /* MHTabBarIndicator.png in Resources */,
@@ -231,6 +248,7 @@
 				791FFE7D1CDC5FFE000097AB /* GroupCell.xib in Resources */,
 				791FFE421CDC2365000097AB /* Assets.xcassets in Resources */,
 				791FFE581CDC23CA000097AB /* MHTabBarInactiveTab@2x.png in Resources */,
+				791FFE881CDC8463000097AB /* AddGroup.xib in Resources */,
 				791FFE701CDC53C5000097AB /* ContactCell.xib in Resources */,
 				791FFE541CDC23CA000097AB /* MHTabBarActiveTab.png in Resources */,
 			);
@@ -247,10 +265,12 @@
 				791FFE731CDC55C4000097AB /* ContactCell.m in Sources */,
 				791FFE681CDC2DE5000097AB /* RecordController.m in Sources */,
 				791FFE3A1CDC2365000097AB /* ViewController.m in Sources */,
+				791FFE8B1CDC8684000097AB /* AddView.m in Sources */,
 				791FFE371CDC2365000097AB /* AppDelegate.m in Sources */,
 				791FFE781CDC5E4F000097AB /* GroupController.m in Sources */,
 				791FFE631CDC2B5A000097AB /* Record.m in Sources */,
 				791FFE5D1CDC24E7000097AB /* ListViewController.m in Sources */,
+				791FFE861CDC6BE9000097AB /* SearchView.m in Sources */,
 				791FFE341CDC2365000097AB /* main.m in Sources */,
 				791FFE6B1CDC5066000097AB /* ContactController.m in Sources */,
 				791FFE7B1CDC5F3F000097AB /* Group.m in Sources */,

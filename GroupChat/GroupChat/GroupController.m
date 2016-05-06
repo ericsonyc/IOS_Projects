@@ -3,6 +3,7 @@
 #import "GroupController.h"
 #import "Group.h"
 #import "GroupCell.h"
+#import "AddView.h"
 
 @implementation GroupController
 
@@ -24,7 +25,36 @@
     
     [self loadData];
     
+    //uisearchcontroller
+    _searchController = [[UISearchController alloc]initWithSearchResultsController:nil];
+    
+    _searchController.searchResultsUpdater = self;
+    
+    _searchController.dimsBackgroundDuringPresentation = false;
+    [self.searchController.searchBar sizeToFit];
+    
+    _searchController.hidesNavigationBarDuringPresentation = NO;
+    
+    NSArray *views=[[NSBundle mainBundle]loadNibNamed:@"Search" owner:nil options:nil];
+    self.search=(SearchView *)[views lastObject];
+    self.search.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44.0f);
+    self.search.searchBar.delegate=self;
+    self.searchflag=NO;
+    [self.search.addBtn addTarget:self action:@selector(addBtnClick:) forControlEvents:UIControlEventTouchDown];
+//  self.search.searchBar.showsCancelButton=YES;
+    
+    
+//  _searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0);
+    
+    self.tableView.tableHeaderView = self.search;
+    
     [self.view addSubview:self.tableView];
+}
+
+-(void)addBtnClick:(id)sender{
+    NSArray *views=[[NSBundle mainBundle]loadNibNamed:@"AddGroup" owner:nil options:nil];
+    AddView *addview=(AddView *)[views lastObject];
+    [self.view addSubview:addview];
 }
 
 -(void)loadData{
@@ -41,30 +71,60 @@
     
 }
 
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+    self.search.searchBar.text=@"";
+    self.searchflag=NO;
+    self.search.searchBar.showsCancelButton=NO;
+    [self.tableView reloadData];
+}
+
+-(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    NSString *pattern=@"\\S*";
+    pattern=[pattern stringByAppendingFormat:@"%@\\S*",self.search.searchBar.text];
+    NSRegularExpression *reg=[NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
+    NSRegularExpression *reg1=[NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
+    NSMutableArray *list=[[NSMutableArray alloc]initWithCapacity:6];
+    for (int i=0; i<[self.datas count]; i++) {
+        Group *record=[self.datas objectAtIndex:i];
+        NSArray* match = [reg matchesInString:record.groupname options:NSMatchingCompleted range:NSMakeRange(0, [record.groupname length])];
+        if (match.count>0) {
+            [list addObject:record];
+            continue;
+        }
+        match=[reg1 matchesInString:record.title options:NSMatchingCompleted range:NSMakeRange(0, [record.title length])];
+        if (match.count>0) {
+            [list addObject:record];
+            continue;
+        }
+        for (int i=0; i<[record.members count]; i++) {
+            match=[reg1 matchesInString:record.members[i] options:NSMatchingCompleted range:NSMakeRange(0, [record.members[i] length])];
+            if(match.count>0){
+                [list addObject:record];
+                break;
+            }
+        }
+    }
+    //    NSMutableArray *List=[self.searchList mutableCopy];
+    self.searchDatas=[list mutableCopy];
+    [self.tableView reloadData];
+
+}
+
 #pragma mark - UISearchResultsUpdating
+-(BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
+    self.search.searchBar.showsCancelButton=YES;
+    self.searchflag=YES;
+    return YES;
+}
+
+-(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
+    self.search.searchBar.showsCancelButton=NO;
+    return YES;
+}
+
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     [self.searchDatas removeAllObjects];
-    //    NSString *pattern=@"\\S*";
-    //    pattern=[pattern stringByAppendingFormat:@"%@\\S*",self.searchController.searchBar.text];
-    //    NSRegularExpression *reg=[NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
-    //    NSRegularExpression *reg1=[NSRegularExpression regularExpressionWithPattern:pattern options:0 error:nil];
-    //    NSMutableArray *list=[[NSMutableArray alloc]initWithCapacity:6];
-    //    for (int i=0; i<[self.datas count]; i++) {
-    //        Record *record=[self.datas objectAtIndex:i];
-    //        NSArray* match = [reg matchesInString:record.content options:NSMatchingCompleted range:NSMakeRange(0, [record.content length])];
-    //        if (match.count>0) {
-    //            [list addObject:record];
-    //            continue;
-    //        }
-    //        match=[reg1 matchesInString:record.date options:NSMatchingCompleted range:NSMakeRange(0, [record.date length])];
-    //        if (match.count>0) {
-    //            [list addObject:record];
-    //            continue;
-    //        }
-    //    }
-    //    //    NSMutableArray *List=[self.searchList mutableCopy];
-    //    self.searchDatas=[list mutableCopy];
-    //    [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDataSource
@@ -76,13 +136,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //    NSLog(@"message count: %d",[_messageDatas count]);
-    //    if (self.searchController.active) {
-    //        return [self.searchDatas count];
-    //    }else{
-    //        return [self.datas count];
-    //    }
+    if (self.searchflag) {
+         return [self.searchDatas count];
+    }else{
+         return [self.datas count];
+    }
     
-    return [self.datas count];
+//    return [self.datas count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -99,12 +159,11 @@
         cell=(GroupCell *)[views lastObject];
     }
     Group *record;
-    //    if (self.searchController.active) {
-    //        record=(Record *)self.searchDatas[indexPath.row];
-    //    }else{
-    //        record=(Record *)self.datas[indexPath.row];
-    //    }
-    record=(Group *)self.datas[indexPath.row];
+    if (self.searchflag) {
+        record=(Group *)self.searchDatas[indexPath.row];
+    }else{
+        record=(Group *)self.datas[indexPath.row];
+    }
     [cell setupCell:record];
     
     return cell;
