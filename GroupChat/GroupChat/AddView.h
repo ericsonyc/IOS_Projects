@@ -7,7 +7,7 @@
 @interface AddView: UIView
 
 @property (nonatomic,strong) IBOutlet UITextField *groupField;
-@property (nonatomic,strong) IBOutlet UITextField *memField;
+@property (nonatomic,strong) IBOutlet UITextView *memField;
 @property (nonatomic,strong) IBOutlet UIButton *addBtn;
 
 @end

@@ -4,6 +4,7 @@
 
 #import<UIKit/UIKit.h>
 #import "SearchView.h"
+#import "Group.h"
 @interface GroupController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UISearchResultsUpdating>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -14,6 +15,7 @@
 
 @property (nonatomic,strong) UISearchController *searchController;
 
+-(void)updateData:(Group *)group;
 @end
 
 #endif /* GroupController_h */

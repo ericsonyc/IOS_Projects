@@ -1,7 +1,6 @@
 
 #import <Foundation/Foundation.h>
 #import "GroupController.h"
-#import "Group.h"
 #import "GroupCell.h"
 #import "AddController.h"
 
@@ -49,6 +48,11 @@
     self.tableView.tableHeaderView = self.search;
     
     [self.view addSubview:self.tableView];
+}
+
+-(void)updateData:(Group *)group{
+    [self.datas addObject:group];
+    [self.tableView reloadData];
 }
 
 -(void)addBtnClick:(id)sender{

@@ -25,7 +25,7 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stw-Cu-uWR">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stw-Cu-uWR">
                     <rect key="frame" x="226" y="22" width="284" height="30"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -36,34 +36,35 @@
                     <animations/>
                     <state key="normal" title="Add"/>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z23-sK-nD8">
-                    <rect key="frame" x="137" y="58" width="186" height="30"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vfk-XP-ukl">
+                    <rect key="frame" x="145" y="68" width="240" height="128"/>
                     <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="xcL-m4-uuc" firstAttribute="top" secondItem="0BL-gS-YnL" secondAttribute="top" constant="20" id="1cp-7V-Gmf"/>
-                <constraint firstItem="Z23-sK-nD8" firstAttribute="top" secondItem="stw-Cu-uWR" secondAttribute="bottom" constant="5" id="2E5-zh-eDE"/>
+                <constraint firstItem="Vfk-XP-ukl" firstAttribute="leading" secondItem="mdd-Im-AMW" secondAttribute="trailing" constant="5" id="7dr-DJ-uBZ"/>
                 <constraint firstItem="stw-Cu-uWR" firstAttribute="top" secondItem="0BL-gS-YnL" secondAttribute="top" constant="22" id="Lsa-eK-zSZ"/>
                 <constraint firstAttribute="trailing" secondItem="stw-Cu-uWR" secondAttribute="trailing" constant="5" id="QEk-am-FMy"/>
+                <constraint firstAttribute="trailing" secondItem="Vfk-XP-ukl" secondAttribute="trailing" constant="5" id="SZi-lQ-0Wh"/>
                 <constraint firstItem="xcL-m4-uuc" firstAttribute="leading" secondItem="0BL-gS-YnL" secondAttribute="leading" constant="20" id="Sro-8Z-4Am"/>
                 <constraint firstItem="stw-Cu-uWR" firstAttribute="leading" secondItem="xcL-m4-uuc" secondAttribute="trailing" constant="5" id="alg-uQ-t8V"/>
-                <constraint firstAttribute="bottom" secondItem="Z23-sK-nD8" secondAttribute="bottom" constant="20" id="gIC-zz-3bg"/>
                 <constraint firstItem="ICm-fa-2OE" firstAttribute="top" secondItem="mdd-Im-AMW" secondAttribute="bottom" constant="5" id="jk1-oq-py7"/>
                 <constraint firstItem="mdd-Im-AMW" firstAttribute="top" secondItem="xcL-m4-uuc" secondAttribute="bottom" constant="5" id="lVq-qy-GSB"/>
-                <constraint firstItem="Z23-sK-nD8" firstAttribute="leading" secondItem="mdd-Im-AMW" secondAttribute="trailing" constant="5" id="ljK-x7-49n"/>
+                <constraint firstAttribute="bottom" secondItem="Vfk-XP-ukl" secondAttribute="bottom" constant="20" id="nwy-bg-MMc"/>
                 <constraint firstItem="mdd-Im-AMW" firstAttribute="leading" secondItem="0BL-gS-YnL" secondAttribute="leading" constant="20" id="odC-p3-lWe"/>
                 <constraint firstItem="ICm-fa-2OE" firstAttribute="leading" secondItem="0BL-gS-YnL" secondAttribute="leading" constant="20" id="x6f-NW-AB5"/>
-                <constraint firstAttribute="trailing" secondItem="Z23-sK-nD8" secondAttribute="trailing" constant="5" id="yTF-XG-2ol"/>
+                <constraint firstItem="Vfk-XP-ukl" firstAttribute="top" secondItem="stw-Cu-uWR" secondAttribute="bottom" constant="5" id="zZK-W5-RHK"/>
             </constraints>
             <connections>
                 <outlet property="addBtn" destination="ICm-fa-2OE" id="mgY-wP-hcu"/>
                 <outlet property="groupField" destination="stw-Cu-uWR" id="1Ce-dM-ehT"/>
-                <outlet property="memField" destination="Z23-sK-nD8" id="Ryf-xW-gNz"/>
+                <outlet property="memField" destination="Vfk-XP-ukl" id="HUD-ui-ccq"/>
             </connections>
             <point key="canvasLocation" x="276" y="677"/>
         </view>
