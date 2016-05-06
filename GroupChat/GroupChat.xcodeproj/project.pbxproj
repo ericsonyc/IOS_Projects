@@ -38,6 +38,9 @@
 		791FFE861CDC6BE9000097AB /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE851CDC6BE9000097AB /* SearchView.m */; };
 		791FFE881CDC8463000097AB /* AddGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE871CDC8463000097AB /* AddGroup.xib */; };
 		791FFE8B1CDC8684000097AB /* AddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE8A1CDC8684000097AB /* AddView.m */; };
+		791FFE931CDCC5CF000097AB /* AddContact.xib in Resources */ = {isa = PBXBuildFile; fileRef = 791FFE921CDCC5CF000097AB /* AddContact.xib */; };
+		791FFE991CDCCAAC000097AB /* ContactAddController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE981CDCCAAC000097AB /* ContactAddController.m */; };
+		791FFE9C1CDCCB98000097AB /* AddContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 791FFE9B1CDCCB98000097AB /* AddContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +92,11 @@
 		791FFE871CDC8463000097AB /* AddGroup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGroup.xib; sourceTree = "<group>"; };
 		791FFE891CDC85EE000097AB /* AddView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddView.h; sourceTree = "<group>"; };
 		791FFE8A1CDC8684000097AB /* AddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddView.m; sourceTree = "<group>"; };
+		791FFE921CDCC5CF000097AB /* AddContact.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddContact.xib; sourceTree = "<group>"; };
+		791FFE941CDCC6B2000097AB /* AddContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddContact.h; sourceTree = "<group>"; };
+		791FFE981CDCCAAC000097AB /* ContactAddController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactAddController.m; sourceTree = "<group>"; };
+		791FFE9A1CDCCAD3000097AB /* ContactAddController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactAddController.h; sourceTree = "<group>"; };
+		791FFE9B1CDCCB98000097AB /* AddContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +176,11 @@
 				791FFE8A1CDC8684000097AB /* AddView.m */,
 				791FFE5B1CDC24E7000097AB /* AddController.h */,
 				791FFE5C1CDC24E7000097AB /* AddController.m */,
+				791FFE921CDCC5CF000097AB /* AddContact.xib */,
+				791FFE941CDCC6B2000097AB /* AddContact.h */,
+				791FFE9B1CDCCB98000097AB /* AddContact.m */,
+				791FFE9A1CDCCAD3000097AB /* ContactAddController.h */,
+				791FFE981CDCCAAC000097AB /* ContactAddController.m */,
 			);
 			path = GroupChat;
 			sourceTree = "<group>";
@@ -238,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				791FFE821CDC6A3E000097AB /* Search.xib in Resources */,
+				791FFE931CDCC5CF000097AB /* AddContact.xib in Resources */,
 				791FFE751CDC5D01000097AB /* contact.png in Resources */,
 				791FFE5F1CDC293B000097AB /* RecordCell.xib in Resources */,
 				791FFE591CDC23CA000097AB /* MHTabBarIndicator.png in Resources */,
@@ -265,6 +279,8 @@
 				791FFE731CDC55C4000097AB /* ContactCell.m in Sources */,
 				791FFE681CDC2DE5000097AB /* RecordController.m in Sources */,
 				791FFE3A1CDC2365000097AB /* ViewController.m in Sources */,
+				791FFE9C1CDCCB98000097AB /* AddContact.m in Sources */,
+				791FFE991CDCCAAC000097AB /* ContactAddController.m in Sources */,
 				791FFE8B1CDC8684000097AB /* AddView.m in Sources */,
 				791FFE371CDC2365000097AB /* AppDelegate.m in Sources */,
 				791FFE781CDC5E4F000097AB /* GroupController.m in Sources */,
@@ -418,6 +434,7 @@
 				791FFE4B1CDC2365000097AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

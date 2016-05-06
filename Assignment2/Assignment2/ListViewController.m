@@ -170,7 +170,7 @@
             if ([oneObject isKindOfClass:[MessageCell class]]) {
                 cell=[(MessageCell *)oneObject initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:messageCell];
                 cell.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 92.0f);
-                
+                break;
             }
         }
     }

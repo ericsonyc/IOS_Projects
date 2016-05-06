@@ -2,6 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "ContactController.h"
 #import "ContactCell.h"
+#import "ContactAddController.h"
 
 @implementation ContactController
 
@@ -26,11 +27,24 @@
     self.search.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44.0f);
     self.search.searchBar.delegate=self;
     self.searchflag=NO;
+    [self.search.addBtn addTarget:self action:@selector(addBtnClick:) forControlEvents:UIControlEventTouchDown];
+    
     self.tableView.tableHeaderView = self.search;
     
     [self loadData];
     
     [self.view addSubview:self.tableView];
+}
+
+-(void)addBtnClick:(id)sender{
+    ContactAddController *addGroup=[[ContactAddController alloc]init];
+    self.navigationController.navigationBarHidden=NO;
+    [self.navigationController pushViewController:addGroup animated:YES];
+}
+
+-(void)updateData:(Contact *)contact{
+    [self.datas addObject:contact];
+    [self.tableView reloadData];
 }
 
 -(void)loadData{

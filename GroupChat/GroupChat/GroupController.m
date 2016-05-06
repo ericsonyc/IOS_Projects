@@ -3,6 +3,7 @@
 #import "GroupController.h"
 #import "GroupCell.h"
 #import "AddController.h"
+#import "AddView.h"
 
 @implementation GroupController
 

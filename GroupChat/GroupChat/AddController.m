@@ -2,6 +2,7 @@
 #import "AddController.h"
 #import "GroupController.h"
 #import "Group.h"
+#import "MHTabBarController.h"
 
 @implementation AddController
 
@@ -32,7 +33,8 @@
     NSArray *splits=[text componentsSeparatedByString:@"\n"];
     NSString *groupname=self.addview.groupField.text;
     Group *group=[[Group alloc]initWithMessageName:groupname messageTitle:@"" messageMembers:[splits mutableCopy]];
-    GroupController *groupController=(GroupController *)[self.navigationController visibleViewController];
+    MHTabBarController *mhtabController=(MHTabBarController *)[self.navigationController visibleViewController];
+    GroupController *groupController=(GroupController *)mhtabController.selectedViewController;
     [groupController updateData:group];
 }
 
