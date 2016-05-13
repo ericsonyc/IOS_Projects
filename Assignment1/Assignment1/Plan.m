@@ -17,8 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];
+    
+    // 导航栏（navigationbar）
+    CGRect rectNav = self.navigationController.navigationBar.frame;
     CGRect frame=[UIScreen mainScreen].bounds;
-    self.textView=[[UITextView alloc]initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height/2)];
+    self.textView=[[UITextView alloc]initWithFrame:CGRectMake(1, rectStatus.size.height+rectNav.size.height, frame.size.width-1, frame.size.height/2-1)];
+    self.textView.layer.borderWidth=1.0;
+    self.textView.layer.borderColor=[[UIColor grayColor]CGColor];
 //    self.textView.backgroundColor=[UIColor yellowColor];
     [[self view]addSubview:self.textView];
 }

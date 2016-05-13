@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7932DFE61CD634A000903719"
-               BuildableName = "Assignment1.app"
-               BlueprintName = "Assignment1"
-               ReferencedContainer = "container:Assignment1.xcodeproj">
+               BuildableName = "TimeManage.app"
+               BlueprintName = "TimeManage"
+               ReferencedContainer = "container:TimeManage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7932E0021CD634A000903719"
-               BuildableName = "Assignment1UITests.xctest"
-               BlueprintName = "Assignment1UITests"
-               ReferencedContainer = "container:Assignment1.xcodeproj">
+               BuildableName = "TimeManage.xctest"
+               BlueprintName = "TimeManageUITests"
+               ReferencedContainer = "container:TimeManage.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7932DFE61CD634A000903719"
-            BuildableName = "Assignment1.app"
-            BlueprintName = "Assignment1"
-            ReferencedContainer = "container:Assignment1.xcodeproj">
+            BuildableName = "TimeManage.app"
+            BlueprintName = "TimeManage"
+            ReferencedContainer = "container:TimeManage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7932DFE61CD634A000903719"
-            BuildableName = "Assignment1.app"
-            BlueprintName = "Assignment1"
-            ReferencedContainer = "container:Assignment1.xcodeproj">
+            BuildableName = "TimeManage.app"
+            BlueprintName = "TimeManage"
+            ReferencedContainer = "container:TimeManage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7932DFE61CD634A000903719"
-            BuildableName = "Assignment1.app"
-            BlueprintName = "Assignment1"
-            ReferencedContainer = "container:Assignment1.xcodeproj">
+            BuildableName = "TimeManage.app"
+            BlueprintName = "TimeManage"
+            ReferencedContainer = "container:TimeManage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

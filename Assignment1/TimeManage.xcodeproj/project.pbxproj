@@ -94,7 +94,7 @@
 		791F466B1CD73E4800EAB5DA /* NSDate+calender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+calender.m"; sourceTree = "<group>"; };
 		791F466D1CD73E5300EAB5DA /* UIVew+LGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIVew+LGExtension.h"; sourceTree = "<group>"; };
 		791F466E1CD73E5300EAB5DA /* UIVew+LGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIVew+LGExtension.m"; sourceTree = "<group>"; };
-		7932DFE71CD634A000903719 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7932DFE71CD634A000903719 /* TimeManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7932DFEB1CD634A000903719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7932DFED1CD634A000903719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7932DFEE1CD634A000903719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		7932DFF91CD634A000903719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7932DFFC1CD634A000903719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7932DFFE1CD634A000903719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7932E0031CD634A000903719 /* Assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7932E0031CD634A000903719 /* TimeManage.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeManage.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7932E0071CD634A100903719 /* Assignment1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment1UITests.m; sourceTree = "<group>"; };
 		7932E0091CD634A100903719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7932E0121CD6367500903719 /* DDClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDClock.h; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 		7932DFE81CD634A000903719 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7932DFE71CD634A000903719 /* Assignment1.app */,
-				7932E0031CD634A000903719 /* Assignment1UITests.xctest */,
+				7932DFE71CD634A000903719 /* TimeManage.app */,
+				7932E0031CD634A000903719 /* TimeManage.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,9 +228,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7932DFE61CD634A000903719 /* Assignment1 */ = {
+		7932DFE61CD634A000903719 /* TimeManage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7932E00C1CD634A100903719 /* Build configuration list for PBXNativeTarget "Assignment1" */;
+			buildConfigurationList = 7932E00C1CD634A100903719 /* Build configuration list for PBXNativeTarget "TimeManage" */;
 			buildPhases = (
 				7932DFE31CD634A000903719 /* Sources */,
 				7932DFE41CD634A000903719 /* Frameworks */,
@@ -240,14 +240,14 @@
 			);
 			dependencies = (
 			);
-			name = Assignment1;
+			name = TimeManage;
 			productName = Assignment1;
-			productReference = 7932DFE71CD634A000903719 /* Assignment1.app */;
+			productReference = 7932DFE71CD634A000903719 /* TimeManage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7932E0021CD634A000903719 /* Assignment1UITests */ = {
+		7932E0021CD634A000903719 /* TimeManageUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7932E00F1CD634A100903719 /* Build configuration list for PBXNativeTarget "Assignment1UITests" */;
+			buildConfigurationList = 7932E00F1CD634A100903719 /* Build configuration list for PBXNativeTarget "TimeManageUITests" */;
 			buildPhases = (
 				7932DFFF1CD634A000903719 /* Sources */,
 				7932E0001CD634A000903719 /* Frameworks */,
@@ -258,9 +258,9 @@
 			dependencies = (
 				7932E0051CD634A000903719 /* PBXTargetDependency */,
 			);
-			name = Assignment1UITests;
+			name = TimeManageUITests;
 			productName = Assignment1UITests;
-			productReference = 7932E0031CD634A000903719 /* Assignment1UITests.xctest */;
+			productReference = 7932E0031CD634A000903719 /* TimeManage.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +281,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7932DFE21CD634A000903719 /* Build configuration list for PBXProject "Assignment1" */;
+			buildConfigurationList = 7932DFE21CD634A000903719 /* Build configuration list for PBXProject "TimeManage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -294,8 +294,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7932DFE61CD634A000903719 /* Assignment1 */,
-				7932E0021CD634A000903719 /* Assignment1UITests */,
+				7932DFE61CD634A000903719 /* TimeManage */,
+				7932E0021CD634A000903719 /* TimeManageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -368,7 +368,7 @@
 /* Begin PBXTargetDependency section */
 		7932E0051CD634A000903719 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7932DFE61CD634A000903719 /* Assignment1 */;
+			target = 7932DFE61CD634A000903719 /* TimeManage */;
 			targetProxy = 7932E0041CD634A000903719 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,7 +474,7 @@
 				INFOPLIST_FILE = Assignment1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.Assignment1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimeManage;
 			};
 			name = Debug;
 		};
@@ -485,7 +485,7 @@
 				INFOPLIST_FILE = Assignment1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.Assignment1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimeManage;
 			};
 			name = Release;
 		};
@@ -495,7 +495,7 @@
 				INFOPLIST_FILE = Assignment1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.Assignment1UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimeManage;
 				TEST_TARGET_NAME = Assignment1;
 				USES_XCTRUNNER = YES;
 			};
@@ -507,7 +507,7 @@
 				INFOPLIST_FILE = Assignment1UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = student.Assignment1UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TimeManage;
 				TEST_TARGET_NAME = Assignment1;
 				USES_XCTRUNNER = YES;
 			};
@@ -516,7 +516,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7932DFE21CD634A000903719 /* Build configuration list for PBXProject "Assignment1" */ = {
+		7932DFE21CD634A000903719 /* Build configuration list for PBXProject "TimeManage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7932E00A1CD634A100903719 /* Debug */,
@@ -525,7 +525,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7932E00C1CD634A100903719 /* Build configuration list for PBXNativeTarget "Assignment1" */ = {
+		7932E00C1CD634A100903719 /* Build configuration list for PBXNativeTarget "TimeManage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7932E00D1CD634A100903719 /* Debug */,
@@ -534,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7932E00F1CD634A100903719 /* Build configuration list for PBXNativeTarget "Assignment1UITests" */ = {
+		7932E00F1CD634A100903719 /* Build configuration list for PBXNativeTarget "TimeManageUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7932E0101CD634A100903719 /* Debug */,
